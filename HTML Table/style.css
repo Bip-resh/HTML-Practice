@@ -1,0 +1,41 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 95vh;
+    width : 95vw;
+}
+
+h3{
+    width : calc(100vw - 50px);
+    min-height : 20px;
+    font-size: 2rem;
+    font-family: Arial , sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.myTable{
+    max-height: 70vh;
+    max-width: 80vw;
+    margin : auto ;
+    background-color: black;
+    
+    
+}
+.row{
+    background-color: lightgrey;
+    text-align: center;
+}
+
+#dataRow{
+    background-color: grey;
+}
+
+th,td{
+    height : 50px;
+    width : 300px;
+} */

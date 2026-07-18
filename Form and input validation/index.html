@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <label for="username">Username :</label>
+        <input type="text" id="username" placeholder="alice borderland" minlength="4" maxlength="20" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" required><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" placeholder="alice123@gmail.com"><br>
+
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" placeholder="01712-345678" pattern="[0-9]{11}" ><br>
+
+        <label for="date">Birthday:</label>
+        <input type="date" id="date"><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" max="99" value="1"><br>
+
+        <label for="title">Title:</label>
+
+        <input type="radio" value="Mr." id="Mr" name="title">
+        <label for="Mr">Mr.</label>
+
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="Ms.">Ms.</label>
+
+        <input type="radio" id="phd" value="Phd" name="title">
+        <label for="phd">Phd</label> <br>
+
+        <label for="payment">Payment:</label>
+        <select id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Paypal">Paypal</option>
+            <option value="Bkash">Bkash</option>
+            <option value="Giftcard">GiftCard</option>
+            <option value="mastercard">MasterCard</option>
+        </select><br>
+
+        <label for="subcribe">Subscribe</label>
+        <input type="checkbox" id="subcribe"><br>
+
+        <label for="comment">Comment</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <button type="reset">Reset</button> 
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
