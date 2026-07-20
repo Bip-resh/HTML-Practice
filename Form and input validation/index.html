@@ -9,52 +9,89 @@
 <body>
     <form>
 
-        <label for="username">Username :</label>
-        <input type="text" id="username" placeholder="alice borderland" minlength="4" maxlength="20" required><br>
+        <div class="form-group">
+            <label for="username">Username :</label>
+            <input type="text" id="username" placeholder="alice borderland" minlength="4" maxlength="20" required><br>
+        </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" minlength="8" required><br>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" required><br>
+        </div>
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" placeholder="alice123@gmail.com"><br>
 
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" placeholder="01712-345678" pattern="[0-9]{11}" ><br>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="alice123@gmail.com" required><br>
+        </div>
 
-        <label for="date">Birthday:</label>
-        <input type="date" id="date"><br>
+        <div class="form-group">
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" placeholder="01712-345678" pattern="01[0-9]{9}" required><br>
+        </div>
 
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" min="1" max="99" value="1"><br>
+        <div class="form-group">
+            <label for="date">Birthday:</label>
+            <input type="date" id="date"><br>
+        </div>
 
-        <label for="title">Title:</label>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" max="99" value="1"><br>
+        </div>
 
-        <input type="radio" value="Mr." id="Mr" name="title">
-        <label for="Mr">Mr.</label>
 
-        <input type="radio" id="Ms." value="Ms." name="title">
-        <label for="Ms.">Ms.</label>
+        <div class="radio">
+            <label for="title">Title:</label>
+            
+            <div class="radio-group">
+                <input type="radio" value="Mr." id="Mr" name="title">
+                <label for="Mr">Mr.</label>
+            </div>
+            
+            <div class="radio-group">
+                <input type="radio" id="Ms." value="Ms." name="title">
+                <label for="Ms.">Ms.</label>
+            </div>
+            
+            <div class="radio-group">
+                <input type="radio" id="phd" value="Phd" name="title">
+                <label for="phd">Phd</label> <br>
+            </div>
+        </div>
+        
 
-        <input type="radio" id="phd" value="Phd" name="title">
-        <label for="phd">Phd</label> <br>
+        
+        <div class="form-group" id="payment-method">
+            <label for="payment">Payment:</label>
+            <select id="payment">
+                <option value="Visa">Visa</option>
+                <option value="Paypal">Paypal</option>
+                <option value="Bkash">Bkash</option>
+                <option value="Giftcard">GiftCard</option>
+                <option value="mastercard">MasterCard</option>
+            </select><br>
+        </div>
+        
 
-        <label for="payment">Payment:</label>
-        <select id="payment">
-            <option value="Visa">Visa</option>
-            <option value="Paypal">Paypal</option>
-            <option value="Bkash">Bkash</option>
-            <option value="Giftcard">GiftCard</option>
-            <option value="mastercard">MasterCard</option>
-        </select><br>
+        
+        <div class="form-group">
+            <label for="subcribe">Subscribe</label>
+            <input type="checkbox" id="subcribe"><br>
+        </div>
+        
 
-        <label for="subcribe">Subscribe</label>
-        <input type="checkbox" id="subcribe"><br>
+        
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea id="comment" rows="3" cols="25"></textarea><br>
+        </div>
+        
 
-        <label for="comment">Comment</label>
-        <textarea id="comment" rows="3" cols="25"></textarea><br>
-
-        <button type="reset">Reset</button> 
-        <button type="submit">Submit</button>
+        <div class="button-group">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </body>
 </html>
