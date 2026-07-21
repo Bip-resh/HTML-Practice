@@ -1,0 +1,121 @@
+/* this is a css syntax here h3 is selector(html element that I want to style) and in the curly bracket left site is property(ex. background color and color ) and right site of semi , property value(like black and white here). */
+
+
+h3{
+    background-color : black;
+    color : white;
+}
+
+
+/* when comes to selectors there is few type of selectors . there is five type of selectors
+     -simple selectors (selecting elements based on the id , class and taq)
+     - A combinator is something that's defined the relationship between two and more selectors.
+     -pseudo-class selector (select element based on certain state)
+     -select and style a part of the element .
+     -Attribute selector(select element based on attribute and attribute's value.
+
+     */
+
+
+
+
+     /* error  */
+
+
+     /* p{
+        color : red
+        font-size : 1rem;
+     }
+     */
+    
+
+     /* if you forget to write semicollen and any syntax it will not work and if we messed up in selector it will not have desire effect.  */
+
+    
+
+    /* if i want to use a color i can use it few different way . using color name (black , white etc) , RGB (red , green , blue ) , hex (hexa decimal number of rgb) and hsl(hue , saturation ,lightness). */
+
+
+    div{
+        height : 50px;
+        width : 50px;
+        margin : 5px;
+    }
+
+    #div1{
+        background-color : red;
+    }
+
+    #div2{
+        background-color : rgb(255, 0, 0);
+    }
+
+    #div3{
+        background-color : #ff0000;
+    }
+
+    #div4{
+        background-color: hsl(0, 100%, 50%);
+    }
+
+    /* we can see we can use color four different way  */
+
+
+    .img-container{
+        height : 600px;
+        width : 1000px;
+        background-image: url("image.png");
+        background-repeat : no-repeat;
+        background-position: left top;
+        background-attachment: scroll;
+        
+    }
+
+    #border1{
+        border : 1px solid black;
+
+    }
+
+
+    #border2{
+        border : 1px dashed black;
+
+    }
+
+    #border3{
+        border : 1px dotted black;
+
+    }
+
+    #border4{
+        border-style : double;
+        border-width: 10px;
+
+    }
+
+    #border5{
+        border-style: groove;
+
+    }
+
+    #border5{
+        border-style: outset;
+        
+
+    }
+
+
+
+    /* Now I wanted change distance between border1 and border2 without changing any content . we should use margin it helps us move the content*/
+
+
+    #border2{
+        /* margin : 20px;  */
+        /* it helps us made distance border2 from every other site . not just from top and if we want just top ,we can more specific*/
+
+        margin-top : 40px;
+
+    }
+
+
+    
