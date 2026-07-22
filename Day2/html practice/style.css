@@ -118,4 +118,76 @@ h3{
     }
 
 
+    /* css padding are used for generating space around content's  */
+
+
+    .box{
+        border : 1px solid black;
+
+        padding : 20px;
+    }
+
+    /* we can clearly see distance between content and border before and after using padding */
+
+
+    .box2{
+
+        height: 100px;
+        width : 100px;
+        padding : 20px;
+        border : 10px solid black;
+        margin : 30px
+    }
+
+
+    /* Here this is the the example of the box model.
+    all though margin is not part of the height or weight . padding and border are part of the height and weight its defend on the box-sizing . if box-sizing value is content (this is default value), padding and border is not part of height and weight .but if box-sizing value is border-box , then padding and border are part of heigh and weight  */
+
+
+
+    /* typography is related to font , like font-size , font-family */
+
+
+    .name{
+        font-family: arial , sans-serif;
+        font-size : 2rem;
+    }
+
+
+    /* flex box helps us to design a one dimensional layout . its works either horizontally or vertically */
     
+    .flex-container{
+        width : 100%;
+        height : 600px;
+        border: 1px solid black;
+        display : flex;
+        flex-direction: row;
+        /* here we row(default value) , column , row-reverse and column-reverse as a value of flex direction */
+        flex-wrap: wrap;
+        /* here we can use nowrap(default value) , wrap , wrap-reverse  */
+        justify-content: center;
+        /* justify content help us align the items  horizontally  . value of justify content can be center , flex-start , flex-end, space around , space between*/
+
+        align-items :  center;
+        /* align-items help us align the items vertically . values are center , flex-start , flex-end , stretch*/
+
+        align-content: space-evenly;
+        /* align-content only works when flex-wrap value is wrap and it content exists into multiple line  . value are stretch(default , center, flex-start , flex-end ,space-between , space-around , space-evenly*/
+    }
+
+    .flex-container div{
+        background-color: yellow;
+        min-height : 50px;
+        width : 200px;
+    }
+
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    .grid-container div{
+        background-color: blue;
+    }
