@@ -1,0 +1,60 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin : 0px;
+    background-color: brown;
+    height : 1000px;
+    /* position : relative; */
+}
+
+h2{
+    /* position: static ; */
+    /* its default value of position. its follow normal baheviours of normal documation . top, bottom , left, right and z-index does not work in this position  */
+
+    /* position: relative;
+    top : 100px; */
+
+    /*  position relative works on the relative of first position of the element . top,
+        bottom,
+        left,
+        right and z-index does work .\ */
+    
+        /* position: absolute; */
+        top : 0px;
+        bottom : 0px;
+        background-color: blueviolet;
+    /* position absolute works ont the  relative of the viewport if any parent , grandparent etc until it reached into root which is root */
+
+
+    
+}
+
+header{
+    display : flex;
+    justify-content: space-between;
+    padding : 10px 30px 0px 30px ;
+    background-color: chocolate;
+
+    /* position : fixed;
+    left :0;
+    right : 0;
+    top : 0; */
+
+
+    /* position fixed helps us place an element any particular place in the view port thats don't move after scroll down or up. its sit above other element .other element does not know its there.top,bottom , left ,right and z-index work here. */
+
+    position : sticky;
+    top : 0px;
+    
+
+    /* position sticky stick to the certain until it stick .   */
+}
+
+
+.hero{
+    height : 50vh;
+}

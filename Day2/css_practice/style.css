@@ -1,4 +1,4 @@
-/* this is a css syntax here h3 is selector(html element that I want to style) and in the curly bracket left site is property(ex. background color and color ) and right site of semi , property value(like black and white here). */
+/* this is a css syntax here h3 is selector(html element that I want to style) and in the curly bracket left site is property(ex. background color and color ) and right site of semi , property value(like black and white here).
 
 
 h3{
@@ -36,7 +36,7 @@ h3{
     /* if i want to use a color i can use it few different way . using color name (black , white etc) , RGB (red , green , blue ) , hex (hexa decimal number of rgb) and hsl(hue , saturation ,lightness). */
 
 
-    div{
+    /* div{
         height : 50px;
         width : 50px;
         margin : 5px;
@@ -56,12 +56,12 @@ h3{
 
     #div4{
         background-color: hsl(0, 100%, 50%);
-    }
+    } */
 
     /* we can see we can use color four different way  */
 
 
-    .img-container{
+    /* .img-container{
         height : 600px;
         width : 1000px;
         background-image: url("image.png");
@@ -102,35 +102,35 @@ h3{
         border-style: outset;
         
 
-    }
+    } */
 
 
 
     /* Now I wanted change distance between border1 and border2 without changing any content . we should use margin it helps us move the content*/
 
 
-    #border2{
+    /* #border2{ */
         /* margin : 20px;  */
         /* it helps us made distance border2 from every other site . not just from top and if we want just top ,we can more specific*/
-
+/* 
         margin-top : 40px;
 
-    }
+    } */
 
 
     /* css padding are used for generating space around content's  */
 
 
-    .box{
+    /* .box{
         border : 1px solid black;
 
         padding : 20px;
-    }
+    } */
 
     /* we can clearly see distance between content and border before and after using padding */
 
 
-    .box2{
+    /* .box2{
 
         height: 100px;
         width : 100px;
@@ -138,7 +138,7 @@ h3{
         border : 10px solid black;
         margin : 30px
     }
-
+ */
 
     /* Here this is the the example of the box model.
     all though margin is not part of the height or weight . padding and border are part of the height and weight its defend on the box-sizing . if box-sizing value is content (this is default value), padding and border is not part of height and weight .but if box-sizing value is border-box , then padding and border are part of heigh and weight  */
@@ -148,32 +148,32 @@ h3{
     /* typography is related to font , like font-size , font-family */
 
 
-    .name{
+    /* .name{
         font-family: arial , sans-serif;
         font-size : 2rem;
-    }
+    } */
 
 
     /* flex box helps us to design a one dimensional layout . its works either horizontally or vertically */
     
-    .flex-container{
+    /* .flex-container{
         width : 100%;
         height : 600px;
         border: 1px solid black;
         display : flex;
-        flex-direction: row;
+        flex-direction: row; */
         /* here we row(default value) , column , row-reverse and column-reverse as a value of flex direction */
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         /* here we can use nowrap(default value) , wrap , wrap-reverse  */
-        justify-content: center;
+        /* justify-content: center; */
         /* justify content help us align the items  horizontally  . value of justify content can be center , flex-start , flex-end, space around , space between*/
 
-        align-items :  center;
+        /* align-items :  center; */
         /* align-items help us align the items vertically . values are center , flex-start , flex-end , stretch*/
 
-        align-content: space-evenly;
+        /* align-content: space-evenly; */
         /* align-content only works when flex-wrap value is wrap and it content exists into multiple line  . value are stretch(default , center, flex-start , flex-end ,space-between , space-around , space-evenly*/
-    }
+    /* }
 
     .flex-container div{
         background-color: yellow;
@@ -185,9 +185,57 @@ h3{
     .grid-container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    } */
+
+
+    /* .grid-container div{
+        background-color: blue;
+    } */ 
+
+    /* body{
+        display : flex;
+        height : 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-model {
+        background-color: blue;
+        height : 100px ;
+        width : 100px;
+        border: 3px solid black;
+        margin: 20;
+        
+    }
+
+    .box-model p{
+        
+        text-align: center;
+        padding: 20px;
+         */
+    /* } */
+
+    .div-container{
+        display: flex;
+        justify-content: center;
+        gap : 20px;
+        padding : 50px;
+        
+
     }
 
 
-    .grid-container div{
+
+    .box1{
         background-color: blue;
     }
+
+    .div-container div{
+        padding : 50px;
+        font-size: 2rem;
+        font-weight: 600;
+        color : red;
+
+    }
+
