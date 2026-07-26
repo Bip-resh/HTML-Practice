@@ -58,3 +58,48 @@ header{
 .hero{
     height : 50vh;
 }
+
+
+
+
+/* overflow = property that's set the desired behavior 
+                when does not fit in the parents element box
+                
+                
+                overflow : visible
+                overflow : hidden
+                overflow : clip
+                overflow : scroll
+                overflow : auto*/
+
+
+
+.overflow-contain{
+    margin: auto;
+    border : 2px solid;
+    height : 100px ;
+    width : 200px ;
+    /* overflow: visible ; */
+
+    /* this is the default page of overflow . overflow elements stays visible outside of the box  */
+
+
+    /* overflow: hidden; */
+
+    /* this helps overflow element to be hidden . but we can interact with the elements */
+
+    /* overflow: clip;
+    overflow-clip-margin : 10px; */
+
+    /* overflow clip helps likes hidden . but it can also help us measure how much we want to be hidden using overflow-clip-hidden  */
+
+    /* overflow: scroll; */
+
+    /* overflow scroll using scroll to show all the element . if it donot element outside of the parent element box still scrolls are visible although its not scrollable  */
+    
+
+
+    /* overflow: auto; */
+
+    /* it helps us to scroll down to see outside of the box elements . but if outside box are not there then scroll bar is not visible*/
+}
