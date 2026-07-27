@@ -103,3 +103,77 @@ header{
 
     /* it helps us to scroll down to see outside of the box elements . but if outside box are not there then scroll bar is not visible*/
 }
+
+
+
+.z-container{
+    margin : 100px auto ;
+    height : 200px ;
+    width : 200px;
+    background-color: blue;
+    font-size: 0.5rem;
+    position: relative;
+    
+    
+}
+
+
+.box{
+    height : 30px ;
+    width : 30px;
+    text-align: center;
+}
+
+.circle{
+    height : 30px;
+    width : 30px;
+    border-radius : 50%;
+    background-color: chocolate;
+    text-align: center;
+    z-index: 2;
+}
+#box1{
+    background-color: brown;
+    position: absolute;
+}
+
+#box2 {
+    background-color: red;
+    position: absolute;
+    top : 0;
+    right : 0px;
+
+}
+
+#box3 {
+    background-color: yellow;
+    position: absolute;
+    bottom : 0px;
+    left : 0px ;
+ 
+}
+
+#box4 {
+    background-color: pink;
+    position: absolute;
+    bottom : 0px;
+    right : 0px;
+}
+
+
+#circle1{
+    position: absolute;
+    top : 85px;
+    left : 85px;
+    z-index : 2;
+}
+
+#circle2 {
+    background-color: rgb(245, 238, 238);
+    position: absolute;
+    top: 85px;
+    left: 85px;
+    z-index : 1;
+
+
+}
