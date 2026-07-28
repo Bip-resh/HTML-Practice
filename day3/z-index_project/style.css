@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+.div-container{
+    margin : 20px auto;
+    height : 90vh;
+    width : 90vw;
+    border : 2px solid black ;
+    border-radius : 5px;
+    position : relative;
+
+}
+
+.layer{
+    border : 2px solid black;
+    border-radius : 20px;
+}
+
+#layer1 {
+    background-color: hsla(0, 0%, 97%, 0.918);
+    position: absolute;
+    top: 180px;
+    bottom: 180px;
+    left: 270px;
+    right: 270px;
+    z-index: 3;
+}
+
+
+#layer2 {
+    background-color: blueviolet;
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    left: 140px;
+    right: 140px;
+    z-index: 2;
+}
+
+
+#layer3{
+    background-color: rgb(48, 14, 14);
+    position: absolute;
+    top: 10px;
+    bottom : 10px ;
+    left : 20px;
+    right : 20px;
+    z-index : 1;
+}
+
+

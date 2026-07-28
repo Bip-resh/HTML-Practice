@@ -1,0 +1,72 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+
+.overflow-container{
+    margin :20px auto;
+    height : 90vh;
+    width : 90vw;
+    border : 2px solid black;
+    border-radius : 5px;
+    display : flex;
+    flex-wrap: wrap;
+    gap : 40px;
+    
+    
+   
+}
+
+.overflow-box-container{
+    height : 42%;
+    width : 42%;
+    border : 2px solid black;
+    border-radius : 5px;
+    margin: 5px 0px 0px 50px;
+
+}
+
+#overflow-img1{
+    overflow: hidden;
+}
+
+#overflow-img1 img{
+
+    height : 100%;
+    width : 100%;
+}
+
+
+#overflow-img2{
+    overflow: clip;
+    overflow-clip-margin: 40px;
+}
+
+#overflow-img2 img {
+
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#overflow-img3{
+    overflow: scroll;
+}
+
+#overflow-img3 img {
+    height: 50%;
+    width: 50%;
+}
+
+#overflow-img4{
+    overflow : auto;
+}
+
+#overflow-img4 img {
+
+    height: 120%;
+    width: 50%;
+}
