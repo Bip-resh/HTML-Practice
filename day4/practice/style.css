@@ -1,0 +1,26 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+}
+
+.div-container{
+    height : 100vh;
+    width : 100vw;
+    
+}
+
+.box{
+    height : 200px ;
+    width : 200px;
+    margin : 100px auto;
+    background-color: pink;
+    transition-duration: 500ms;
+    transition-property : all;
+    tran
+}
+
+.box:hover{
+    background-color: blueviolet;
+    transform: rotate(45deg);
+}
