@@ -5,22 +5,72 @@
 }
 
 .div-container{
-    height : 100vh;
-    width : 100vw;
+    height : auto;
+    width : 300px;
     
 }
 
-.box{
-    height : 200px ;
-    width : 200px;
-    margin : 100px auto;
-    background-color: pink;
-    transition-duration: 500ms;
-    transition-property : all;
-    tran
+.div-container1{
+    height : auto;
+    width: 700px;
+    
 }
 
-.box:hover{
+
+.box{
+    height : 100px ;
+    width : 300px;
+    margin : 10px 20px;
+    background-color: pink;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition-duration: 500ms;
+    transition-delay: 200ms;
+    transition-property: background , width;
+
+}
+
+#box0{
+    height : 200px;
+    width : 200px;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    transition-delay : 1s;
+}
+
+#box0:hover{
     background-color: blueviolet;
     transform: rotate(45deg);
+}
+
+
+
+#box1{
+    transition-timing-function: linear;
+}
+
+
+
+#box2{
+    transition-timing-function: ease-in;
+}
+
+
+
+#box3 {
+    transition-timing-function: ease-out;
+}
+
+
+
+
+#box4 {
+    transition-timing-function: ease-in-out;
+}
+
+.div-container1:hover .box {
+    background-color: blueviolet;
+    width: 700px;
 }
