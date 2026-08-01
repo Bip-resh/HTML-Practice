@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-size : 1.5rem;
+    --font-color : blue;
+    --margin : 10px;
+    --padding : 20px ;
+    --color : rgb(241, 207, 207);
+    --secondColor : hsla(0, 100%, 96%, 0.863);
+    --br: 10px;
+    --shadow : 0px 1px 1px 2px black;
+}
+
+
+
+.css-variable{
+
+    margin : var(--margin);
+    padding : var(--padding);
+    background-color: var(--color);
+    border-radius : var(--br);
+
+}
+
+.list{
+    list-style: none;
+    display : flex;
+    padding : var(--padding);
+    background-color : var(--secondColor);
+    border-radius: var(--br);
+    margin-bottom: var(--margin);
+    display : flex;
+    justify-content: space-between;
+
+}
+
+.list li{
+    padding : var(--padding);
+    font-size: var(--font-size);
+    margin-right: var(--margin);
+    border-radius: var(--br);
+    box-shadow: var(--shadow);
+
+}
+
+
+.paragraph-container{
+    padding : var(--padding);
+    background-color: var(--secondColor);
+    border-radius: var(--br);
+    color : var(--font-color);
+} 

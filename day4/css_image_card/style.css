@@ -1,0 +1,46 @@
+
+.card-container{
+    margin :  50px auto;
+    max-width : 900px;
+    display : flex;
+    background-color: cadetblue;
+}
+
+.image-container{
+    height : 416px;
+    width : 450px;
+    background-color: blue;
+    margin : 10px;
+
+
+}
+
+.image-container img{
+    height : 416px;
+    width : 440px;
+    object-fit: contain;
+}
+
+.information{
+    height: 416px;
+    width: 450px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 24px;
+    background-color: brown;
+    margin : 10px;
+}
+
+button{
+    max-width: 280px;
+}
+
+input{
+    max-width : 280px;
+}
+
+p{
+    text-align: center;
+} 

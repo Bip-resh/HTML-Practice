@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* ------------------------------- transition ---------------------------- */
+
 .div-container{
     height : auto;
     width : 300px;
@@ -73,4 +75,5 @@
 .div-container1:hover .box {
     background-color: blueviolet;
     width: 700px;
-}
+} 
+
