@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    margin: 50px auto;
+    max-width: 900px;
+    display: flex;
+    border-radius : 20px;
+    background-color: #F5F5F5;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.image-container {
+    height: 416px;
+    max-width: max(20vw, 450px);
+    margin: 10px;
+    border-radius: 20px;
+
+
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius : 20px;
+}
+
+.information {
+    min-height: 416;
+    width: min(30vh ,450px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 24px;
+    margin: 10px 10px 10px 30px;
+    padding : min(2vh,60px) min(1vh, 30px)  min(2vh, 60px) 0px; 
+}
+
+.information h1{
+    width: min(70vw, 300px);
+}
+
+.information p{
+    width : min(70vw, 300px);
+    opacity: 0.5;
+    text-align: left;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    gap : 4px;
+}
+
+.email-container input {
+    width: min(70vw, 300px);
+    padding : 15px 20px ;
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+}
+
+.email-container input:hover{
+    transform: scale(1.03);
+    background-color: rgb(215, 215, 243) ;
+}
+
+#offer-button{
+    width: min(70vw, 300px);
+    padding : 15px 20px ;
+    border-radius: 20px;
+    border : none;
+    background-color: #E16F3D;
+}
+
+#offer-button:hover{
+    transform: scale(1.03);
+    background-color: #e16e3da1 ;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+@media(max-width: 640px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        gap : 10px;
+    }
+}
