@@ -5,15 +5,15 @@
 }
 
 .div-container{
-    width : 400px;
-    height : 500px;
+    width : 450px;
+    height : 461px;
     margin : 50px auto;
+    padding: 20px 40px;
     display : flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap : 10px;
-    /* background-color: #FFFFFF; */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     border-radius : 20px;
 
@@ -25,18 +25,27 @@
     
 }
 
+.div-container h2{
+    font-size: 24px;
+    max-width: 280px;
+    line-height: 32px;
+    font-weight: 500;
+}
 
 
 
 .div-container p{
-    opacity: 0.5;
-    width : 250px;
+    font-size: 16px;
+    max-width: 280px;
+    line-height : 24px;
+    font-weight: 400px;
     text-align: center;
 }
 
 
 #loginButton{
-    width : 250px;
+    width : 290px;
+    font-size: 14px;
     border-radius : 20px;
     border : none;
     padding : 8px;
@@ -48,7 +57,8 @@
 
 
 #createButton{
-    width : 250px;
+    width : 290px;
+    font-size : 14px;
     border-radius : 20px;
     border : none;
     padding : 8px;

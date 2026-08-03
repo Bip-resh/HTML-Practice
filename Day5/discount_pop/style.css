@@ -14,8 +14,8 @@
 }
 
 .image-container {
-    height: 416px;
-    max-width: max(20vw, 450px);
+    height: min(90vh,416px);
+    width: min(40vw, 450px);
     margin: 10px;
     border-radius: 20px;
 
@@ -30,24 +30,26 @@
 }
 
 .information {
-    min-height: 416;
-    width: min(30vh ,450px);
+    min-height: min(90vh,416px);
+    width: min(40vw ,450px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 24px;
+    gap: 16px;
     margin: 10px 10px 10px 30px;
-    padding : min(2vh,60px) min(1vh, 30px)  min(2vh, 60px) 0px; 
+    padding : min(1vh,30px) min(0.8vh, 30px)  min(1vh, 60px) 0px; 
 }
 
 .information h1{
-    width: min(70vw, 300px);
+    width: min(30vw, 300px);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
 }
 
 .information p{
-    width : min(70vw, 300px);
-    opacity: 0.5;
+    width : min(30vw, 300px);
     text-align: left;
 }
 
@@ -58,7 +60,7 @@
 }
 
 .email-container input {
-    width: min(70vw, 300px);
+    width: min(30vw, 300px);
     padding : 15px 20px ;
     border-radius: 20px;
     border: 1px solid #E5E5E5;
@@ -70,7 +72,7 @@
 }
 
 #offer-button{
-    width: min(70vw, 300px);
+    width: min(30vw, 300px);
     padding : 15px 20px ;
     border-radius: 20px;
     border : none;
@@ -88,10 +90,34 @@ p {
 }
 
 
-@media(max-width: 640px){
+@media(max-width: 440px){
     .card-container{
+        margin : 5px;
+        width :calc(100vw - 10px);
+        height : calc(100vh - 10px);
         display: flex;
+        align-items: start;
         flex-direction: column;
-        gap : 10px;
+        
     }
+    
+    .image-container {
+        height: calc(50vh - 20px);
+        width: 95%;
+        align-self: center;
+        
+    }
+    .information {
+        height: calc(50vh - 40px);
+        width: 90vw;
+        margin: 30px 0px 10px 20px ;
+        padding-left: 5px;
+        justify-content: start;
+        
+        
+    }
+    .information h1 ,.information p ,#offer-button, .email-container input{
+        width : 80%;
+    }
+    
 }

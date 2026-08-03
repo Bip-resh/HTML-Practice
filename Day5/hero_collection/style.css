@@ -1,0 +1,67 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing : border-box;
+}
+
+.div-container{
+    margin : 10px auto;
+    width: calc(100vw - 20px);
+    height : calc(100vh - 20px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(image.png);
+    
+    background-position: top;
+    border-radius: 20px;
+    padding : clamp(1rem, 2.5rem, 3rem);
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap : 15px;
+    align-items: start;
+    color : white;
+    font-family: arial,sans-serif;
+}
+
+.div-container h1{
+    width: min(90vw ,600px);
+    height : auto;
+    font-size: clamp(2rem , 3.25rem, 4rem);
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.div-container p{
+    width : min(80vw , 600px);
+    height : auto;
+    font-size : clamp(0.8rem , 1rem, 2rem);
+    line-height: 1.5rem;
+
+}
+
+.div-container button{
+    width : 180px;
+    height : 44px;
+    padding : 10px 15px;
+    border-radius : 20px ;
+    border : none ;
+    cursor: pointer;
+    color : white;
+    background-color: #E16F3D ;
+    font-size: 0.8rem;
+}
+
+@media(max-width : 375px){
+    .div-container{
+        width : calc(375px - 6px);
+        height : 490px;
+        margin : 3px;
+        
+    }
+
+    .div-container h1{
+        font-size: 36px;
+        line-height: 40px;
+        font-weight : bold;
+    
+    }
+}
