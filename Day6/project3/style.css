@@ -1,0 +1,80 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+.div-container{
+    height : 80vh;
+    width : 90vw;
+    margin : 20px auto;
+    padding : 20px;
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+
+}
+
+
+.content-container{
+    margin-top : 30px;
+    height : 80%;
+    width : 100%;
+    display: flex;
+    gap : 20px;
+    
+}
+
+.modernTailoring-container{
+    background-image: url(./gallery/left.png);
+    background-position: top;
+    background-size: cover;
+    height : 100%;
+    width :50%;
+    border-radius : 20px;
+    padding : 10px;
+    display: flex;
+    align-items: end;
+}
+
+.pureCashmere-container{
+    background-image: url(./gallery/right.png);
+    background-position: top;
+    background-size: cover;
+    width : 50%;
+    border-radius : 20px;
+    padding : 10px;
+    display : flex;
+    align-items: end;
+}
+
+.paraAndButton-container{
+    width : 100%;
+    padding : 5px 10px;
+    border-radius : 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.paraAndButton-container p{
+    font-size: 0.8rem;
+    opacity : 0.7;
+}
+
+.paraAndButton-container h2{
+    font-size : 1.5rem;
+}
+
+.para-container{
+    margin-top: 5px;
+}
+
+button{
+    border : none;
+    padding : 10px 15px;
+    background-color: #E06F3D;
+    border-radius : 20px;
+    color : white;
+}

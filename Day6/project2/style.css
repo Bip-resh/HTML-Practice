@@ -1,0 +1,137 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.div-container{
+    margin : 50px auto;
+    padding : 30px 20px 0px 20px;
+    height : 70vh;
+    width : 95vw;
+    display : flex;
+    flex-direction: column;
+    border : 1px solid rgba(0, 0, 0, 0.055);
+    border-radius : 10px;
+
+}
+
+.contain-container{
+    height : 70%;
+    width : 100%;
+    display: flex;
+    gap : 20px;
+
+}
+
+.item-container {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+
+}
+
+
+#explore-container, #customerCare-container, #contact-container{
+    padding-top : 30px;
+}
+
+.title-p{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.item-container p{
+    opacity: 0.7;
+}
+
+
+.title-container{
+    display : flex;
+    align-items: center;
+
+}
+.title-container img {
+    height : 20px ;
+    width : 20px;
+}
+
+.image-container{
+    padding-top : clamp(1px , 30px , 35px);
+    display : flex;
+    justify-content: space-between;
+    width : 40%;
+}
+
+.image-container img{
+    height : 20px ;
+    width : 20px;
+    border-radius : 50%;
+}
+
+.email-container  {
+    display : flex;
+    justify-content: start;
+    align-items: center;
+    gap : 2px;
+}
+
+.email-container img{
+    height  : 20px;
+    width : 20px;
+}
+
+.email-container a{
+    color : black;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+.phone-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+}
+
+.phone-container img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.payment-container{
+    height : 30%;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0px 20px 0px 20px;
+    opacity: 0.7;
+    border-top: 1px solid rgba(0, 0, 0, 0.164);;
+}
+
+.condition-container{
+    display: flex;
+    gap : 30px;
+}
+
+.condition-container button{
+    border : none;
+    background-color: #FFFFFF;
+    
+}
+
+.system-container{
+    display: flex;
+    gap : 5px;
+}
+
+.system-container img{
+    height : 15px ;
+    width : 15px;
+}
