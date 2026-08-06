@@ -6,7 +6,7 @@
 
 .div-container{
     margin : 10px auto;
-    width: calc(100vw - 20px);
+    width:  calc(100vw - 20px);
     height : calc(100vh - 20px);
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(image.png);
     

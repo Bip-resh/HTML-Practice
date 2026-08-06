@@ -1,0 +1,42 @@
+
+
+.div-container h1,
+.div-container p ,
+.div-container a{
+    color : red;
+}
+
+/* .div-container :is(h1, p, a):hover{
+    color : yellow;
+} */
+
+.div-container  :is(p, a):is(:hover, :focus){
+    color : yellow;
+}
+
+
+.box{
+    height : 100px;
+    width : 100px;
+    background-color: rgb(224, 207, 207);
+    font-size: 4rem;
+    text-align: center;
+    color : blue;
+
+    transform: rotateZ(180deg);
+
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(224, 207, 207);
+    font-size: 4rem;
+    text-align: center;
+    color: blue;
+
+    transform: skewY(180deg);
+
+}
+
+

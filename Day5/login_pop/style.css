@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --button-font-size : 16px;
+}
+
 .div-container{
     width : 450px;
     height : 461px;
@@ -35,7 +39,7 @@
 
 
 .div-container p{
-    font-size: 16px;
+    font-size: var(--button-font-size);
     max-width: 280px;
     line-height : 24px;
     font-weight: 400px;
@@ -45,7 +49,7 @@
 
 #loginButton{
     width : 290px;
-    font-size: 14px;
+    font-size: var(--font-size);
     border-radius : 20px;
     border : none;
     padding : 8px;
