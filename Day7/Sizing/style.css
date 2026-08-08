@@ -1,0 +1,112 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.product-container{
+    margin : 10px;
+    padding : 20px;
+    border-radius : 20px;
+    height : auto ;
+    width : calc(100vw - 20px);
+    display : grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px ,1fr));
+    justify-content: center ;
+    gap : 30px;
+    border : 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.card-container{
+    height : 500px;
+    min-width : 300px;
+    padding : min(10px , 0.5vh) min(20px, 0.5vw);
+    border-radius: 20px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border : 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 1px 1px 5px 1px  black;
+}
+
+.img-container{
+    max-width : 100%;
+    max-height : 50%;
+    border-radius: 20px;
+    padding: min(10px, 0.5vh) min(20px, 0.5vw);
+}
+
+.img-container img{
+    height : 100%;
+    width : 100%;
+    border-radius : 20px;
+    object-fit: cover;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap : 15px;
+    color : rgb(1, 1, 14);
+    padding: min(10px, 1.1vh) min(20px, 1.5vw);
+}
+
+.name{
+    font-size: clamp(1rem , 2vw , 2rem);
+    color : blue;
+}
+
+.color-container{
+    width : 100%;
+    display: flex;
+    gap : 20px
+
+    
+}
+
+.black-color{
+    height : 20px;
+    width: 20px;
+    background-color: black;
+    border-radius : 50%;
+}
+
+.blue-color {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(0, 0, 207);
+    border-radius: 50%;
+}
+
+.pink-color {
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.cart-container{
+    width : 100%;
+    display : flex;
+    justify-content: space-between;
+    padding : 0px min(20px , 1vw);
+    font-size : 1.5rem;
+    align-items: center;
+}
+
+.cart-container button{
+    font-size: clamp( 1rem, 1vw , 1.5rem) ;
+    padding : 0.25em 0.5em;
+    border : none;
+    border-radius : 20px;
+    background-color: violet;
+    cursor: pointer;
+}
+
+.cart-container button:hover{
+    background-color: rgba(238, 130, 238, 0.562);
+}
