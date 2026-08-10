@@ -14,10 +14,12 @@ h1{
     margin-bottom : 30px;
     padding  : 10px 20px;
     text-align: center;
+    font-size : clamp(2rem , calc( 2vw + 1rem) , 4rem)
 }
 
 .first-p{
-    margin : 30px;
+    font-size: clamp(1.1rem , 2vw ,1.5rem);
+    margin : min(2vw,30px);
     white-space: pre-wrap;
     gap : 10px;
     line-height: 30px;
@@ -25,6 +27,7 @@ h1{
 
 
 .second-p{
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     margin : 30px;
     white-space: nowrap;
 }
