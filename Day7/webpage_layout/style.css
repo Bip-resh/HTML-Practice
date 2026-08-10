@@ -131,7 +131,7 @@ footer{
 .main-container{
     margin: 10px 10px 0px 10px;
     height : auto;
-    width: calc(100% - 20px);
+    width: calc(95% - 30px);
     padding : 20px;
     border : var(--border);
     border-radius: var(--border-radius);
@@ -206,7 +206,7 @@ footer{
 
 .footer-container{
     height : 100%;
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
     border : var(--border);
     border-radius: var(--border-radius);
     margin-top: 20px;
