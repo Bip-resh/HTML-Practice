@@ -15,13 +15,15 @@
 .web-container{
     margin: 0px 10px;
     height : auto;
-    width : 100%;
+    width: calc(98vw - 20px);
     display : grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 100px  minmax(500px, auto) 150px;
     grid-template-areas:    "header header"
                             "sidebar main"
                             "footer footer";
+
+
 
     
 }
@@ -44,7 +46,8 @@ footer{
 
 
 .header-container{
-    width: calc(100% - 20px);
+    width: calc(98vw - 20px);
+    margin : 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,14 +58,16 @@ footer{
     left : 0px ;
     right: 0px;
     z-index: 10;
-    border: var(--border);
+    
+
 
 
 
     
 }
 .announcement-bar{
-    width : calc(100% - 20px);
+    width : 100%;
+    margin: 0px 10px;
     text-align: center;
     padding : 5px 10px;
     border-radius : var(--border-radius);
@@ -73,7 +78,7 @@ footer{
 }
 
 .nav-container{
-    width: calc(100% - 20px);
+    width: 100%;
     margin : 10px;
     display: flex;
     justify-content: space-between;
@@ -106,7 +111,10 @@ footer{
     border-radius: var(--border-radius);
     position : sticky;
     top : 100px;
+    left : 0px;
     z-index: 1;
+
+    
 
 
 }
@@ -129,12 +137,12 @@ footer{
 
 
 .main-container{
-    margin: 10px 10px 0px 10px;
     height : auto;
-    width: calc(95% - 30px);
+    margin: 10px 0px 0px 10px;
+    width: 98%;
     padding : 20px;
-    border : var(--border);
     border-radius: var(--border-radius);
+    overflow-x: hidden;
 
 
 }
@@ -205,8 +213,7 @@ footer{
 
 
 .footer-container{
-    height : 100%;
-    width: calc(100% - 20px);
+    width: calc(100vw - 40px);
     border : var(--border);
     border-radius: var(--border-radius);
     margin-top: 20px;

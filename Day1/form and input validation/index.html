@@ -28,7 +28,7 @@
 
         <div class="form-group">
             <label for="phone">Phone number:</label>
-            <input type="tel" id="phone" placeholder="01712-345678" pattern="01[0-9]{9}" required><br>
+            <input type="tel" id="phone" placeholder="01712-345678" pattern="01[0-9]{9}" title="Please only number, starts with 017 and total 11 num" required><br>
         </div>
 
         <div class="form-group">
@@ -45,19 +45,21 @@
         <div class="radio">
             <label for="title">Title:</label>
             
-            <div class="radio-group">
-                <input type="radio" value="Mr." id="Mr" name="title">
-                <label for="Mr">Mr.</label>
-            </div>
-            
-            <div class="radio-group">
-                <input type="radio" id="Ms." value="Ms." name="title">
-                <label for="Ms.">Ms.</label>
-            </div>
-            
-            <div class="radio-group">
-                <input type="radio" id="phd" value="Phd" name="title">
-                <label for="phd">Phd</label> <br>
+            <div class="radio-group-container">
+                <div class="radio-group">
+                    <input type="radio" value="Mr." id="Mr" name="title">
+                    <label for="Mr">Mr.</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" id="Ms." value="Ms." name="title">
+                    <label for="Ms.">Ms.</label>
+                </div>
+                
+                <div class="radio-group">
+                    <input type="radio" id="phd" value="Phd" name="title">
+                    <label for="phd">Phd</label> <br>
+                </div>
             </div>
         </div>
         
