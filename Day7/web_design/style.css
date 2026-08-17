@@ -1,0 +1,383 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+.web-container{
+    min-height: 100vw;
+    width : 100vh;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width : 99vw;
+    align-items: center;
+}
+
+.announcement-bar{
+    width : 100%;
+    background-color: #5A6D57;
+    text-align: center;
+    color : white;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 100%;
+    height : 30px;
+    padding : 10px 0px;
+}
+
+
+.navigation-bar{
+    width : 100%;
+    padding: 0 0 5px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+
+.page-container{
+    width: 50%;
+}
+
+.page-list{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    padding: 5px 10px;
+    
+}
+
+.page-list a{
+    text-decoration: none;
+    color : black;
+    font-family: "Montserrat";
+    color : #404040;
+    
+}
+
+
+.icon-container{
+    width : 15%;
+    display: flex;
+    justify-content: space-between;
+    padding : 5px 10px;
+}
+
+
+
+/* -------------------------main------------------------ */
+
+main{
+    width : 99vw;
+}
+
+.hero-container{
+    width : 100%;
+    height : 100vh;
+    background-image: url(./image/hero\ image.png);
+    position: relative;
+}
+
+.hero-para{
+
+    height : 130px;
+    position: absolute;
+    top: 300px;
+    left : 108px;
+    
+}
+
+.hero-para p{
+    width : 100%;
+    font-family: 'Gill Sans MT';
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 400;
+    line-height : 180%;
+    color : #0C0C0C;
+    
+}
+
+.hero-para button{
+    margin-top : 30px;
+    padding : 8px ;
+    width : 184px;
+    border : none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    line-height : 24px;
+}
+
+
+/* ------------------------ cards container ---------------------- */
+
+.bestSellers-container{
+    width : 100%;
+    padding:   80px;
+    display : flex;
+    flex-direction: column;
+}
+
+
+.information-container{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.information-container button{
+    border : none;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+    color : #5A6D57;
+}
+
+
+.information-container h2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+}
+
+
+
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+    gap : 20px;
+
+}
+
+.card-container{
+    height : 546px;
+    width : 35%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img{
+    position: relative;
+}
+
+.next-button{
+    width: 80%;
+    height: 8%;
+    border : none;
+    cursor: pointer;
+    position: absolute;
+    top : 85%;
+    left : 10%;
+    background-color: #404E3E;
+    color : white;
+    font-family: 'Montserrat';
+    line-height : 180%;
+    display: none;
+}
+
+.img:hover >.next-button{
+    display: block;
+}
+
+.img img{
+    width : 100%;
+    height : 438px;
+    object-fit: cover;
+}
+
+
+#favorite1 ,
+#favorite2 ,
+#favorite3 {
+    display: none;
+}
+
+
+
+#favorite1:checked ~ .favorite1 img,
+#favorite2:checked~.favorite2 img ,
+#favorite3:checked~.favorite3 img
+{
+    background-color: red;
+}
+
+
+
+
+.fav{
+    height : 25px;
+    width : 25px;
+    position: absolute;
+    top : 10px;
+    right : 10px;
+}
+
+.fav img{
+    height : 100%;
+    width : 100%;
+    border-radius : 50%;
+    background-color: antiquewhite;
+    
+
+}
+
+
+
+
+.para-container{
+    display: flex;
+    flex-direction: column;
+    gap : 5px;
+}
+
+.para-container h3{
+    font-family: 'Montserrat';
+    font-style : bold ;
+    font-size : 16px;
+    font-weight: 700;
+    line-height : 140%;
+}
+
+
+
+.name-price{
+    display : flex;
+    justify-content : space-between;
+    
+}
+
+.name{
+    font-family: 'Montserrat';
+    font-weight : 400;
+    font-size : 16px;
+    line-height: 180%;
+}
+
+.price{
+    font-family: 'Montserrat';
+    font-weight : 700;
+}
+
+.color-container{
+    display: flex;
+    gap : 10px;
+}
+
+.black-container{
+    height : 20px ;
+    width : 20px ;
+    border-radius : 50%;
+    background-color: #0C0C0C;
+}
+
+
+.pink-container {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #7DC3EB;
+}
+
+.green-container {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #748C70 ;
+}
+
+
+
+
+
+
+
+/* -------------------------Collection Container --------------------------- */
+
+.collection-container{
+    height : 200vh;
+    width: 99vw;  
+    padding : 80px;
+}
+
+
+.img-gallery{
+    width: 100%;
+    height : 100%;
+    display: flex;
+    gap: 30px;
+
+}
+
+.left-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    
+    
+}
+
+.right-gallery{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+
+.pic-container1{
+    background-image: url(./image/collectionPic/Blouses.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height : 30%;
+    width : 100%;
+}
+
+.pic-container2{
+    background-image: url(./image/collectionPic/Dresses.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width : 100%;
+    height : 70%;
+
+}
+
+.pic-container3 {
+    background-image: url(./image/collectionPic/pants.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height : 70%;
+    width : 100%;
+}
+
+.pic-container4 {
+    background-image: url(./image/collectionPic/outwear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+    width : 100%;
+}
