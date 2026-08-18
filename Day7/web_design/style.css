@@ -5,7 +5,7 @@
 }
 
 .web-container{
-    min-height: 100vw;
+    height : auto;
     width : 100vh;
 
 }
@@ -213,8 +213,8 @@ main{
 
 
 #favorite1:checked ~ .favorite1 img,
-#favorite2:checked~.favorite2 img ,
-#favorite3:checked~.favorite3 img
+#favorite2:checked ~.favorite2 img ,
+#favorite3:checked ~.favorite3 img
 {
     background-color: red;
 }
@@ -314,13 +314,21 @@ main{
 .collection-container{
     height : 200vh;
     width: 99vw;  
-    padding : 80px;
+    padding : 40px 80px; 
+}
+
+.collection-container h2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size : 32px;
+    line-height : 140%;
+    margin-bottom: 20px;
 }
 
 
 .img-gallery{
     width: 100%;
-    height : 100%;
+    height : 90%;
     display: flex;
     gap: 30px;
 
@@ -352,6 +360,7 @@ main{
     background-position: center;
     height : 30%;
     width : 100%;
+    position: relative;
 }
 
 .pic-container2{
@@ -361,6 +370,7 @@ main{
     background-position: center;
     width : 100%;
     height : 70%;
+    position: relative;
 
 }
 
@@ -371,6 +381,7 @@ main{
     background-position: center;
     height : 70%;
     width : 100%;
+    position: relative;
 }
 
 .pic-container4 {
@@ -380,4 +391,155 @@ main{
     background-position: center;
     height: 30%;
     width : 100%;
+    position: relative;
 }
+
+
+.img-gallery button{
+    border : none;
+    padding : 10px 50px;
+    background-color: #FFFFFF;
+    font-family: 'Montserrat';
+    position: absolute;
+    bottom : 10px;
+    right : 10px;
+
+}
+
+
+
+
+
+
+/* --------------Modiweek Section */
+
+
+.modiweek-container{
+    padding : 40px 80px;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+}
+
+
+
+.modiweek-container h1 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    margin-bottom : 10px;
+
+}
+
+
+.modiweek-cards-container{
+    display: flex;
+    width : 100%;
+    height : 100%;
+    gap : 20px;
+    overflow-x: aut;
+    
+}
+
+.modiweek-card-container{
+    width : 25vw;
+    height : 95%;
+    display : flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+
+
+.modiweek-pic-container{
+    width : 20vw;
+    height : 80%;
+
+    position: relative;
+
+
+}
+
+
+
+
+
+.modiweek-img{
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    
+}
+
+.modiweek-fav img{
+    border-radius : 50%;
+}
+
+.modiweek-fav-container {
+    height : 20px;
+    width : 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top : 5px;
+    right : 5px;
+    border-radius: 50%;
+
+}
+
+#modiweek-check,
+#modiweek-check2,
+#modiweek-check3,
+#modiweek-check4,
+#modiweek-check5{
+    display: none ;
+}
+
+#modiweek-check:checked ~ .modiweek-fav img,
+#modiweek-check2:checked~.modiweek-fav img,
+#modiweek-check3:checked~.modiweek-fav img,
+#modiweek-check4:checked~.modiweek-fav img,
+#modiweek-check5:checked~.modiweek-fav img{
+    background-color: red;
+}
+
+
+.modiweek-fav {
+    height : 100%;
+    width : 100%;
+    
+}
+
+
+.modiweek-pic-container button{
+    display : none;
+    border : none;
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    bottom : 5%;
+    left : 10%;
+    background-color: #748C70 ;
+}
+
+
+
+
+.modiweek-pic-container img:hover~button {
+    display: block;
+}
+
+.modiweek-cards-container h2{
+    height : 20%;
+    width : 100%;
+    font-family: 'Montserrat';
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 140%;
+    
+}
+
+
