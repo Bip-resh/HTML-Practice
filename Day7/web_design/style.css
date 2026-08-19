@@ -424,6 +424,7 @@ main{
 
 
 .modiweek-container h1 {
+    height : 10%;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 32px;
@@ -436,15 +437,15 @@ main{
 .modiweek-cards-container{
     display: flex;
     width : 100%;
-    height : 100%;
+    height : 90%;
     gap : 20px;
-    overflow-x: aut;
+    overflow-x: auto;
     
 }
 
 .modiweek-card-container{
-    width : 25vw;
-    height : 95%;
+    width : 20vw;
+    height : 100%;
     display : flex;
     flex-direction: column;
     
@@ -458,7 +459,6 @@ main{
 .modiweek-pic-container{
     width : 20vw;
     height : 80%;
-
     position: relative;
 
 
@@ -532,14 +532,140 @@ main{
     display: block;
 }
 
-.modiweek-cards-container h2{
+.day-container {
     height : 20%;
     width : 100%;
     font-family: 'Montserrat';
     font-weight : 700;
     font-size : 16px;
     line-height : 140%;
+}
+
+.day-container h2{
+    margin : 55px 0px 0px 6px;
+    font-family : 'Montserrat';
+    font-weight : 700;
+    font-size: 16px;
+    line-height : 140%;
+
+}
+
+
+
+
+.day-container{
+    height : 20%;
+    width : 100%;
+    font-family : 'Montserrat';
+    font-weight : 700;
+    font-size : 16px;
+    line-height : 140%;
+}
+
+
+
+
+/* ---------------Sustainability section -------------- */
+
+
+.sustain-container{
+    margin : 40px 0px;
+    height : 80vh;
+    width : 100vw;
+    background-image: url(./image/sustainpic/sustain_pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+    position: relative;
+    
+
+}
+
+
+.sustain-para-button{
+    width : 35%;
+    position : absolute;
+    bottom : 30px;
+    right : 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+} 
+
+.sustain-para-button p{
+    font-family: 'Montserrat';
+    font-size : 20px;
+    font-weight : 400;
+    line-height : 180%;
+}
+
+
+.sustain-para-button button{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    border : none;
+    line-height : 24px;
+    padding : 10px 40px;
+    align-self: end;
+    
+}
+
+.sustain-para-button button:hover{
+    background-color: #ffffffa6;
+}
+
+
+
+
+/* ------------------------------Modimal Section----------------------- */
+
+.modimal-container{
+    padding : 40px 80px;
+    height : 140vh;
+    width : 100vw;
+    border:  1px solid black;
+
+}
+
+.modimal-container h1{
+   height : 5%;
+   width : 100%;
+}
+
+
+.modimal-image-container{
+    height : 95%;
+    width : 100%;
+    display: flex;
     
 }
 
 
+.left-modimal-image-container{
+    height : 100%;
+    width :50%;
+}
+
+.left-modimal-image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-modimal-img-container{
+    height : 100%;
+    width : 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-modimal-img-container img{
+    height : 50%;
+    width : 50%;
+    object-fit: cover;
+    
+}
