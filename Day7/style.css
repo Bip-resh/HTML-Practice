@@ -6,9 +6,7 @@
     color : red;
 }
 
-/* .div-container :is(h1, p, a):hover{
-    color : yellow;
-} */
+
 
 .div-container  :is(p, a):is(:hover, :focus){
     color : yellow;
