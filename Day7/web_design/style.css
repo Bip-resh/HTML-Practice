@@ -6,15 +6,26 @@
 
 .web-container{
     height : auto;
-    width : 100vh;
+    width : calc(100vw - 15px);
+    overflow: hidden;
+
+    
 
 }
+
 
 header{
     display: flex;
     flex-direction: column;
-    width : 99vw;
+    width : 100%;
     align-items: center;
+    background-color: #FFFFFF;
+    position: fixed;
+    top : 0px;
+    left: 0px;
+    z-index : 15;
+    
+
 }
 
 .announcement-bar{
@@ -22,7 +33,7 @@ header{
     background-color: #5A6D57;
     text-align: center;
     color : white;
-    font-size: 12px;
+    font-size: min(12px , 2vw);
     font-weight: 600;
     letter-spacing: 0.8px;
     line-height: 100%;
@@ -33,7 +44,7 @@ header{
 
 .navigation-bar{
     width : 100%;
-    padding: 0 0 5px 7%;
+    padding: 12px 2% 12px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,9 +52,27 @@ header{
     
 }
 
+.menuBar-container{
+    display: none;
+}
 
 
-.page-container{
+.logo-container img{
+    width : min(186px , 15vw);
+}
+
+
+
+.cross-label{
+    display: none;
+}
+
+.cross-label img {
+    height : 20px ;
+    width : 20px;
+}
+
+.page-container {
     width: 50%;
 }
 
@@ -52,12 +81,21 @@ header{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 10px;
+    gap: min(10px ,2vw);
     padding: 5px 10px;
     
 }
 
+
+.list-page img{
+    height : 20px ;
+    width : 20px;
+    display: none;
+}
+
 .page-list a{
+    font-size : min(18px , 1.5vw);
+    font-weight : 400;
     text-decoration: none;
     color : black;
     font-family: "Montserrat";
@@ -66,6 +104,10 @@ header{
 }
 
 
+.page-container-button{
+    display: none;
+}
+
 .icon-container{
     width : 15%;
     display: flex;
@@ -73,18 +115,198 @@ header{
     padding : 5px 10px;
 }
 
+.image-container img{
+    height : min(25px , 4vh);
+    width : min(25px, 4vw);
+}
+body:has( .menuBar-container input:checked){
+    overflow: hidden;
+    height : 100vh;
+}
+
+@media(max-width : 500px){
+
+    .web-container{
+        width : 100vw;
+        overflow-x: hidden;
+    }
+
+    .menuBar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap : 8%;
+        
+    }
+
+    .menuBar-container label ,
+    .menuBar-container img{
+        height : 20px;
+        width : 20px;
+    }
+
+    .menuBar-container input{
+        display: none;
+    }
+
+    .navigation-bar{
+        display: flex;
+        width : 100%;
+        padding: 0px;
+        padding : 10px 10px 10px 20px;
+        justify-content: space-between;
+        
+    }
+    
+    #search-icon , 
+    #profile-icon{
+        display: none;
+    }
+
+    .page-container{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width : 100%;
+        height: 100vh;
+        top : 50px;
+        left : 0;
+        transform: translateX(-100%);
+        transition: 0.3s ease-in;
+        background-color: #ffffff;
+        z-index: 10;
+        margin : 20px 0 20px 0;
+        padding: 30px 0px 20px 0;
+        gap : 20px;
+
+       
+
+    }
+
+    .cross-label {
+        display: block;
+        height : 20px;
+        width : 20px;
+
+        
+    }
+
+    .page-list{
+        flex-direction: column;
+        height : auto;
+        gap : 10px;
+        padding: 30px 20px 0 20px;
+        
+    
+    }
+
+     .list-page {
+        display: flex;
+        width : 100%;
+        margin-right: 50px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        
+    }
+
+    .page-list img{
+        display: block;
+        
+    }
+
+    .page-list a{
+        color: black;
+        font-size: 16px;
+        line-height: 180%;
+        padding : 10px 0;
+        
+        
+    }
+
+    .page-container-button{
+        display : block;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .page-container-button button{
+        padding : 10px 20px ;
+        border: none;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-top: 1px solid rgba(0, 0, 0, 0.479);
+        background-color: #FFFFFF;
+    }
+
+    .page-container-button button:hover{
+        transform: scale(1.02);
+        transition: 0.3s ease;
+        background-color: #5A6D57;
+    }
+
+    
+    .navigation-bar:has(.menuBar-container input:checked) .page-container{
+        transform: translateX(0);
+    }
+    .navigation-bar:has(.menuBar-container input:checked) .menu-label{
+        display: none;
+    }
+
+    .navigation-bar:has(.menuBar-container input:not(:checked)) .cross-label{
+        display: none;
+    }
+    
+    
+    
+
+    .cross-label:hover{
+        background-color : #7DC3EB;
+    }
+
+
+    .logo-container{
+        width : 20%;
+        height : 30px;
+    }
+
+    .logo-container img{
+        height : 30px;
+        width : auto;
+    }
+
+    .icon-container{
+        display: flex;
+        gap : 8%;
+    }
+
+    .icon-container img{
+        height : 20px ;
+        width : 20px;
+    }
+    
+
+
+   
+}
+
 
 
 /* -------------------------main------------------------ */
 
 main{
-    width : 99vw;
+    margin-top: 84px;
+    width : 100%;
 }
 
 .hero-container{
     width : 100%;
     height : 100vh;
-    background-image: url(./image/hero\ image.png);
+    background-image:  url(./image/hero\ image.png);
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -92,16 +314,16 @@ main{
 
     height : 130px;
     position: absolute;
-    top: 300px;
+    bottom :150px;
     left : 108px;
     
 }
 
 .hero-para p{
     width : 100%;
-    font-family: 'Gill Sans MT';
+    font-family: 'Lato';
     font-style: italic;
-    font-size: 34px;
+    font-size: min(34px , 6vw);
     font-weight: 400;
     line-height : 180%;
     color : #0C0C0C;
@@ -109,22 +331,37 @@ main{
 }
 
 .hero-para button{
-    margin-top : 30px;
+    margin-top : min(30px , 3vh);
     padding : 8px ;
-    width : 184px;
+    width :min(184px , 20vw);
     border : none;
     font-family: 'Montserrat';
-    font-size: 14px;
+    font-size: min(14px , 4vw);
     font-weight: 400;
-    line-height : 24px;
+    line-height : 140%;
 }
 
 
-/* ------------------------ cards container ---------------------- */
+@media(max-width:500px){
+    .hero-container{
+        background-position: center top;
+        margin-bottom : 0px;
+    }
+
+    .hero-para{
+        bottom: 40px;
+        left : 10px;
+    }
+
+
+    
+}
+
+/* ------------------------ Best seller container ---------------------- */
 
 .bestSellers-container{
     width : 100%;
-    padding:   80px;
+    padding:   min(80px, 7vh) min(108px , 7vw);
     display : flex;
     flex-direction: column;
 }
@@ -134,7 +371,7 @@ main{
     width : 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
 }
 
@@ -180,7 +417,7 @@ main{
 
 .next-button{
     width: 80%;
-    height: 8%;
+    height: 10%;
     border : none;
     cursor: pointer;
     position: absolute;
@@ -211,35 +448,36 @@ main{
 }
 
 
-
-#favorite1:checked ~ .favorite1 img,
-#favorite2:checked ~.favorite2 img ,
-#favorite3:checked ~.favorite3 img
+#favorite1:checked ~ .favorite1 svg,
+#favorite2:checked ~.favorite2 svg ,
+#favorite3:checked ~.favorite3 svg
 {
-    background-color: red;
+    fill : red;
+    
 }
+
 
 
 
 
 .fav{
-    height : 25px;
-    width : 25px;
+    height : 30px;
+    width : 30px;
     position: absolute;
-    top : 10px;
-    right : 10px;
-}
-
-.fav img{
-    height : 100%;
-    width : 100%;
-    border-radius : 50%;
-    background-color: antiquewhite;
+    top : 20px;
+    right : 20px;
     
 
 }
 
+.fav svg {
+    height : 100%;
+    width : 100%;
+    border-radius : 50%;
+    fill : white;
+    
 
+}
 
 
 .para-container{
@@ -261,6 +499,7 @@ main{
 .name-price{
     display : flex;
     justify-content : space-between;
+    align-items: center;
     
 }
 
@@ -305,6 +544,31 @@ main{
 
 
 
+@media(max-width:500px){
+    
+    .bestSellers-container{
+        padding: 7vh  5vw;
+    }
+
+    
+
+    .card-container{
+        width: auto;
+    }
+
+    #card3{
+        display: none;
+    }
+
+    .para-container h3,
+    .name-price{
+        font-size: 14px;
+    }
+
+
+
+}
+
 
 
 
@@ -313,8 +577,8 @@ main{
 
 .collection-container{
     height : 200vh;
-    width: 99vw;  
-    padding : 40px 80px; 
+    width: 99%;  
+    padding: min(80px, 7vh) min(108px, 7vw);
 }
 
 .collection-container h2{
@@ -322,7 +586,7 @@ main{
     font-weight: 600;
     font-size : 32px;
     line-height : 140%;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 
@@ -408,15 +672,26 @@ main{
 
 
 
+@media(max-width : 500px){
+    .collection-container{
+        padding: 7vh 5vw;
+    }
 
+    .img-gallery button{
+        height : 50px;
+        bottom : 0;
+        left : 0;
+        right : 0;
+    }
+}
 
 
 /* --------------Modiweek Section */
 
 
 .modiweek-container{
-    padding : 40px 80px;
-    width : 100vw;
+    padding: 0 0 0 min(108px, 7vw);
+    width : 100%;
     height : 100vh;
     overflow: hidden;
 }
@@ -429,22 +704,33 @@ main{
     font-weight: 600;
     font-size: 32px;
     line-height: 140%;
-    margin-bottom : 10px;
+    margin-bottom : 24px;
 
 }
 
 
 .modiweek-cards-container{
-    display: flex;
-    width : 100%;
-    height : 90%;
-    gap : 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
+    width: 100%;
+    height: 90%;
+    gap: 20px;
     overflow-x: auto;
+    padding-right : 20px;
     
 }
 
+.modiweek-cards-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+
+
 .modiweek-card-container{
-    width : 20vw;
+    width : 100%;
     height : 100%;
     display : flex;
     flex-direction: column;
@@ -457,7 +743,7 @@ main{
 
 
 .modiweek-pic-container{
-    width : 20vw;
+    width : 100%;
     height : 80%;
     position: relative;
 
@@ -475,14 +761,14 @@ main{
     
 }
 
-.modiweek-fav img{
+.modiweek-fav svg{
     border-radius : 50%;
+
 }
 
 .modiweek-fav-container {
     height : 20px;
     width : 20px;
-    background-color: #FFFFFF;
     position: absolute;
     top : 5px;
     right : 5px;
@@ -498,12 +784,12 @@ main{
     display: none ;
 }
 
-#modiweek-check:checked ~ .modiweek-fav img,
-#modiweek-check2:checked~.modiweek-fav img,
-#modiweek-check3:checked~.modiweek-fav img,
-#modiweek-check4:checked~.modiweek-fav img,
-#modiweek-check5:checked~.modiweek-fav img{
-    background-color: red;
+#modiweek-check:checked ~ .modiweek-fav svg,
+#modiweek-check2:checked~.modiweek-fav svg,
+#modiweek-check3:checked~.modiweek-fav svg,
+#modiweek-check4:checked~.modiweek-fav svg,
+#modiweek-check5:checked~.modiweek-fav svg{
+    fill : red;
 }
 
 
@@ -533,7 +819,7 @@ main{
 }
 
 .day-container {
-    height : 20%;
+    height : 10%;
     width : 100%;
     font-family: 'Montserrat';
     font-weight : 700;
@@ -563,6 +849,30 @@ main{
 }
 
 
+@media(max-width : 500px){
+    .modiweek-container{
+        padding : 0 5vw 10px 5vw;
+        height : 80vh;
+    }
+
+    .modiweek-cards-container{
+        grid-auto-columns: 50%;
+    }
+
+    .modiweek-pic-container{
+        height : 70%;
+
+    }
+
+    .day-container{
+        height : 25%;
+    }
+    
+    
+
+   
+
+}
 
 
 /* ---------------Sustainability section -------------- */
@@ -571,7 +881,7 @@ main{
 .sustain-container{
     margin : 40px 0px;
     height : 80vh;
-    width : 100vw;
+    width : 100%;
     background-image: url(./image/sustainpic/sustain_pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -587,17 +897,17 @@ main{
 .sustain-para-button{
     width : 35%;
     position : absolute;
-    bottom : 30px;
-    right : 70px;
-
+    bottom : 43px;
+    right : 108px;
     display: flex;
+    gap : 12px;
     flex-direction: column;
     align-items: start;
 } 
 
 .sustain-para-button p{
     font-family: 'Montserrat';
-    font-size : 20px;
+    font-size : min(20px , 3vw);
     font-weight : 400;
     line-height : 180%;
 }
@@ -620,6 +930,21 @@ main{
 
 
 
+@media(max-width: 500px){
+    .sustain-container{
+        margin: 10px 0px;
+    }
+
+    .sustain-para-button{
+        width : 70%;
+        bottom : 10px ;
+        right : 10px;
+    }
+
+    .sustain-para-button button{
+        font-size: 16px;
+    }
+}
 
 
 
@@ -627,9 +952,9 @@ main{
 /* ------------------------------Modimal Section----------------------- */
 
 .modimal-container{
-    padding : 40px 80px;
+    padding: min(80px, 7vh) min(108px, 7vw);
     height : 140vh;
-    width : 100vw;
+    width : 100%;
 
 }
 
@@ -640,6 +965,7 @@ main{
    font-weight : 600px;
    font-size : 32px;
    line-height : 140%;
+   margin-bottom: 24px;
 }
 
 
@@ -677,17 +1003,34 @@ main{
 }
 
 
+@media(max-width:500px){
+    .modimal-container{
+        padding : 7vh 5vw;
+    }
+
+    .modimal-container h1{
+        font-size: min(32px , 7);
+    }
+
+    .left-modimal-image-container{
+        display: none;
+    }
+
+    .right-modimal-img-container{
+        width: 100%;
+    }
+}
 
 /* -----------------Footer section -------------- */
 
 
 
 footer{
-    height : 70vh;
-    width : 100vw;
+    height : 68vh;
+    width : 100%;
     display: flex;
-    padding : 60px 80px 0px  80px ;
-    margin-top : 20px;
+    padding: min(80px, 7vh) min(108px, 7vw);
+    margin-top : 70px;
     background-color: #404040;
     color : white;
     
@@ -707,13 +1050,13 @@ footer{
 .left-footer-container h2{
     font-family: 'Montserrat';
     font-weight : 700;
-    font-size : 20px;
+    font-size : min(24px , 3vw);
     line-height : 140%;
 }
 
 
 .footer-email-container{
-    margin-bottom: 20%;
+    margin-bottom: 15%;
     display: flex;
     flex-direction: column;
     gap : 4px;
@@ -741,9 +1084,21 @@ footer{
     background-color: transparent;
     border : 1px solid rgba(255, 255, 255, 0.527);
     outline: none;
-    padding : 10px ;
+    padding : 13px ;
     color : white;
+    outline: 0.1px solid rgba(255, 255, 255, 0.788);
 }
+
+.footer-email-input::placeholder {
+    opacity: 0.5;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: min(12px , 1.5vw);
+    line-height: 180%;
+}
+
+
 
 
 .input-container img{
@@ -757,15 +1112,18 @@ footer{
 
 
 .footer-checkmark{
+    margin-top : 18px;
     display : flex;
     width : 100%;
-    gap : 4px;
+    gap : 8px;
     align-items: center;
 }
 
 #footerChecker{
     display : none;
 }
+
+
 
 
 #footerChecker:checked~.footerLabel{
@@ -780,11 +1138,19 @@ footer{
     border : 1px solid rgba(255, 255, 255, 0.473);
 }
 
+.footer-checkmark p{
+    font-family: 'Montserrat';
+    font-size: min(12px ,1.5vw);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.8px;
+    
+}
 
 
 .footer-pic-container{
     display : flex;
-    gap : 15px;
+    gap : min(15px , 2vh);
     margin-bottom : 10px;
     
 }
@@ -797,15 +1163,16 @@ footer{
 }
 
 .left-copywrite{
-    font-size: 1.8rem;
+    font-size: min(1.8rem , 2vw);
 }
 
 .right-copywrite{
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: 12px;
+    font-size: min(12px , 1.5vw);
     width : auto;
     line-height: 180%;
+    opacity: 0.6;
     
 
 }
@@ -816,7 +1183,7 @@ footer{
     width : 50%;
     display: flex;
     justify-content: space-between;
-
+    margin-left : 10px;
 }
 
 .aboutModimal-container{
@@ -828,7 +1195,7 @@ footer{
 .aboutModimal-container h3{
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 20px;
+    font-size: min(20px , 2.5vw);
     line-height: 140%;
 }
 
@@ -840,7 +1207,7 @@ footer{
 
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size : 18px;
+    font-size : min(18px , 2vw);
     line-height : 180%;
 }
 
@@ -849,13 +1216,13 @@ footer{
 .help-support-container{
     display: flex;
     flex-direction: column;
-    gap : 20px;
+    gap : min(20px , 2vh);
 }
 
 .help-support-container h3{
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 20px;
+    font-size: min(20px, 2.5vw);;
     line-height: 140%;
 }
 
@@ -867,20 +1234,20 @@ footer{
 
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size : 18px;
+    font-size: min(18px, 2vw);
     line-height : 180%;
 }
 
 .joinUp-container{
     display: flex;
     flex-direction: column;
-    gap : 20px;
+    gap : min(20px , 2vh)
 }
 
 .joinUp-container h3{
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 20px;
+    font-size: min(20px, 2.5vw);
     line-height: 140%;
 }
 
@@ -892,6 +1259,43 @@ footer{
 
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size : 18px;
+    font-size: min(18px, 2vw);
     line-height : 180%;
 }
+
+
+
+@media(max-width:500px) {
+    footer {
+        height : auto;
+        width : 100%;
+        padding: 7vh 5vw 20vh 5vw;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .left-footer-container{
+        width : 100%;
+        height : auto;
+        padding :  0;
+    }
+
+    .right-footer-container{
+        width : 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 40px;
+    }
+
+    .footer-pic-copywrite-container{
+        position: absolute;
+        z-index : 15; 
+        bottom : -5px;
+        left : 7vw;
+        
+
+    }
+}
+

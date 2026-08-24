@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -20,33 +21,62 @@
             </div>
             
             <div class="navigation-bar">
-                <div class="log-container">
+                <div class="menuBar-container">
+                    <input type="checkbox" id="menuBar">
+                    <label for="menuBar" class="menu-label"><img src="./image/menubar.svg"></label>
+                    <label for="menuBar" class="cross-label"><img src="./image/xbar.svg"></label>
+                    <img src="./image/Header search icon.png">
+                    
+                </div>
+
+                <div class="logo-container">
                     <img src="./image/logo.png">
                 </div>
 
                 <div class="page-container">
                     <ul class="page-list">
-                        <li><a href="# ">Collection</a></li>
-                        <li><a href="#">New In</a></li>
-                        <li><a href="#">Modiweek</a></li>
-                        <li><a href="#">plus size</a></li>
-                        <li><a href="#">Sustainability</a></li>
+                        <li class="list-page">
+                            <a href="# " >Collection</a>
+                            <img src="./image/down.svg">
+                        </li>
+                        <li class="list-page">
+                            <a href="#">New In</a>
+                            <img src="./image/down.svg">
+                        </li>
+                            
+                        <li class="list-page">
+                            <a href="#">Modiweek</a>
+                            <img src="./image/down.svg">
+                        </li>
+                        <li class="list-page">
+                            <a href="#">plus size</a>
+                            <img src="./image/down.svg">
+                        </li>
+                        <li class="list-page">
+                            <a href="#">Sustainability</a> 
+                            <img src="./image/down.svg">
+                        </li>
                     </ul>
+                    <div class="page-container-button">
+                        <button type="button">Log in</button>
+                        <button type="button">Create Account</button>
+                    </div>
                 </div>
 
                 <div class="icon-container">
 
-                    <div class="image-container">
+                    <div class="image-container" id="search-icon">
                         <img src="./image/Header search icon.png">
                     </div>
 
-                    <div class="image-container">
+                    <div class="image-container" id="profile-icon">
                         <img src="./image/Header profile icon.png">
                     </div>
-
                     <div class="image-container">
                         <img src="./image/heart.svg">
                     </div>
+
+            
 
                     <div class="image-container">
                         <img src="./image/Header bag icon.png">
@@ -65,6 +95,11 @@
                     <button type="button">New In</button>
                 </div>
             </div>
+
+
+
+            <!-- --------------Best sellers container--------- -->
+
 
             <div class="bestSellers-container">
 
@@ -85,12 +120,16 @@
                             <button type="button" class="next-button">Next</button>
                             <div class="fav">
                                 <input type="checkbox" id="favorite1">
-                                <label for="favorite1" class="favorite1"><img class="fav-img" src="./image/heart.svg"></label>
+                                <label for="favorite1" class="favorite1"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                         </div>
 
                         <div class="para-container">
-                            <h3>tailored stretch</h3>
+                            <h3>Tailored Stretch</h3>
                             <div class="name-price">
                                 <p class="name">turn it up pants</p>
                                 <p class="price">$180</p>
@@ -110,14 +149,18 @@
                     </div>
 
 
-                    <div class="card-container">
+                    <div class="card-container" id="card3">
                         
                         <div class="img">
                             <img src="./image/card2img.jpg">
                             <button type="button" class="next-button">Next</button>
                             <div class="fav">
                                 <input type="checkbox" id="favorite2">
-                                <label for="favorite2" class="favorite2"><img class="fav-img" src="./image/heart.svg"></label>
+                                <label for="favorite2" class="favorite2"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                         </div>
 
@@ -149,7 +192,11 @@
                             <button type="button" class="next-button">Next</button>
                             <div class="fav">
                                 <input type="checkbox" id="favorite3">
-                                <label for="favorite3" class="favorite3"><img class="fav-img" src="./image/heart.svg"></label>
+                                <label for="favorite3" class="favorite3"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                         </div>
 
@@ -176,6 +223,8 @@
                 </div>
             </div>
 
+
+            <!-- ---------------Collection Container------------ -->
 
             <div class="collection-container">
                 <h2>Collection</h2>
@@ -221,7 +270,11 @@
                             <img src="./image/modiweek/modiweek1.jpg" class="modiweek-img">
                             <div class="modiweek-fav-container">
                                 <input type="checkbox" id="modiweek-check">
-                                <label for="modiweek-check" class="modiweek-fav"><img src="./image/heart.svg" ></label> 
+                                <label for="modiweek-check" class="modiweek-fav"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 640 640" fill="white"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label> 
                             </div>
                             <button type="button">Add to Cart</button>
                         </div>
@@ -235,7 +288,11 @@
                             <img src="./image/modiweek/modiweek2.jpg" class="modiweek-img">
                             <div class="modiweek-fav-container">
                                 <input type="checkbox" id="modiweek-check2">
-                                <label for="modiweek-check2" class="modiweek-fav"><img src="./image/heart.svg"></label>
+                                <label for="modiweek-check2" class="modiweek-fav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                                    fill="white"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                             <button type="button">Add to Cart</button>
                         </div>
@@ -250,7 +307,11 @@
                             <img src="./image/modiweek/modiweek3.jpg" class="modiweek-img">
                             <div class="modiweek-fav-container">
                                 <input type="checkbox" id="modiweek-check3">
-                                <label for="modiweek-check3" class="modiweek-fav"><img src="./image/heart.svg"></label>
+                                <label for="modiweek-check3" class="modiweek-fav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                                    fill="white"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                             <button type="button">Add to Cart</button>
                         </div>
@@ -263,7 +324,11 @@
                             <img src="./image/modiweek/modiweek4.png" class="modiweek-img">
                             <div class="modiweek-fav-container">
                                 <input type="checkbox" id="modiweek-check4">
-                                <label for="modiweek-check4" class="modiweek-fav"><img src="./image/heart.svg"></label>
+                                <label for="modiweek-check4" class="modiweek-fav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                                    fill="white"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                             <button type="button">Add to Cart</button>
                         </div>
@@ -276,7 +341,11 @@
                             <img src="./image/modiweek/modiweek5.png" class="modiweek-img">
                             <div class="modiweek-fav-container">
                                 <input type="checkbox" id="modiweek-check5">
-                                <label for="modiweek-check5" class="modiweek-fav"><img src="./image/heart.svg"></label>
+                                <label for="modiweek-check5" class="modiweek-fav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                                    fill="white"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                    <path
+                                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+                                </svg></label>
                             </div>
                             <button type="button">Add to Cart</button>
                         </div>
@@ -324,11 +393,11 @@
 
         <footer>
             <div class="left-footer-container">
-                <h2>Join our club, get 15% off for your Birthday</h2>
+                <h2>Join Our Club, Get 15% Off For Your Birthday</h2>
 
                 <div class="footer-email-container">
                     <div class="input-container">
-                        <input type="email" placeholder="Enter your email">
+                        <input type="email" placeholder="Enter your email address" class="footer-email-input">
                         <img src="./image/Social_icon/arrow_forward.png">
                     </div>
                     <div class="footer-checkmark">
@@ -338,30 +407,32 @@
                     </div>
                 </div>
 
-                <div class="footer-pic-container">
-                    <a href="#">
-                        <img src="./image/Social_icon/insta.png">
-                    </a>
-                
-                    <a href="#">
-                        <img src="./image/Social_icon/face.png">
-                    </a>
-                
-                    <a href="#">
-                        <img src="./image/Social_icon/pinterest.png">
-                    </a>
-                
-                    <a href="#">
-                        <img src="./image/Social_icon/tiktok.png">
-                    </a>
-                </div>
-
-                <div class="copywrite-container">
-                    <div class="left-copywrite">
-                        <p>&copy;</p>
+                <div class="footer-pic-copywrite-container">
+                    <div class="footer-pic-container">
+                        <a href="#">
+                            <img src="./image/Social_icon/insta.png">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="./image/Social_icon/face.png">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="./image/Social_icon/pinterest.png">
+                        </a>
+                    
+                        <a href="#">
+                            <img src="./image/Social_icon/tiktok.png">
+                        </a>
                     </div>
-                    <div class="right-copywrite">
-                        <p>2023 modimal. All Rights Reserved.</p>
+                    
+                    <div class="copywrite-container">
+                        <div class="left-copywrite">
+                            <p>&copy;</p>
+                        </div>
+                        <div class="right-copywrite">
+                            <p>2023 modimal. All Rights Reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
