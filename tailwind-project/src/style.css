@@ -4,3 +4,26 @@
 body{
     background-color: #10172a;
 }
+
+
+@theme {
+    --color-chestnut: #973F29 ;
+}
+
+@layer base{
+    h3 {
+        @apply text-white text-2xl space-x-0.5;
+    }
+}
+
+
+@layer components{
+    .card{
+        @apply py-5 px-10 text-green-600 bg-blue-300 border-none rounded-2xl hover:bg-blue-200;
+    }
+}
+
+
+@utility flex-center{
+    @apply flex justify-center items-center;
+}
