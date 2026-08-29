@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 body{
     background-color: #10172a;
+    color-scheme: dark;
 }
 
 
 @theme {
     --color-chestnut: #973F29 ;
+    --spacing-h2-spa : px-10 , mt-10;
 }
 
 @layer base{
@@ -27,3 +30,4 @@ body{
 @utility flex-center{
     @apply flex justify-center items-center;
 }
+
