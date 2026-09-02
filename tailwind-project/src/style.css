@@ -1,17 +1,36 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
 
-body{
-    background-color: #10172a;
-    color-scheme: dark;
-    padding: 10px;
+@font-face {
+    font-family: "satoshi";
+    src: url("./assets/font/Satoshi-variable.ttf") format("truetype");
+    font-weight: 100 900;
+    
 }
 
+
+
+@font-face {
+    font-family: "integral-cf";
+    src: url("./assets/font/Fontspring-DEMO-integralcf-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family : "doto";
+    src : url("./assets/font/Doto-Regular.ttf");
+}
+
+
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     --color-chestnut: #973F29 ;
     --spacing-h2-spa : px-10 , mt-10;
+    --font-satoshi: "satoshi", sans-serif;
+    --font-integral-cf: 'integral-cf', sans-serif;
+    --font-integral-cf-bold: 'integral-cf-bold', sans-serif;
+    --font-doto: 'doto', sans-serif;
 }
 
 @layer base{
@@ -20,13 +39,11 @@ body{
     }
 }
 
-
 @layer components{
     .card{
         @apply py-5 px-10 text-green-600 bg-blue-300 border-none rounded-2xl hover:bg-blue-200;
     }
 }
-
 
 @utility flex-center{
     @apply flex justify-center items-center;
