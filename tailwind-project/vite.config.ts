@@ -1,8 +1,11 @@
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import htmlInject from "vite-plugin-html-inject";
+
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
+    htmlInject()
   ],
 })

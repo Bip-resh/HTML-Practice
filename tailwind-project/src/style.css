@@ -57,8 +57,11 @@
     }
 
     .card-heading{
-        @apply font-satoshi font-bold text-[16px] leading-[100%] mt-[10px] ;
+        @apply font-satoshi font-bold text-[16px] leading-[100%] mt-[10px] sm:text-[20px] sm:mt-4 ;
     }
+    /* .card-heading-sm{
+        @apply fo
+    } */
 
 
 }
@@ -67,6 +70,13 @@
     @apply flex justify-center items-center;
 }
 
-@utility scrollbar-hide::-webkit-scrollbar {
-    display: none;
+@utilitiy bg-centerright{
+    background-position: center right;
 }
+
+@utility scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
