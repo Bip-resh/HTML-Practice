@@ -59,9 +59,15 @@
     .card-heading{
         @apply font-satoshi font-bold text-[16px] leading-[100%] mt-[10px] sm:text-[20px] sm:mt-4 ;
     }
-    /* .card-heading-sm{
-        @apply fo
-    } */
+    
+
+    .footer-header{
+        @apply font-satoshi font-medium text-sm  leading-[140%] tracking-[3px] uppercase sm:text-base;
+    }
+
+    .footer-para{
+        @apply flex flex-col gap-3 font-satoshi font-normal text-sm opacity-60 leading-[120%] sm:text-base;
+    }
 
 
 }
