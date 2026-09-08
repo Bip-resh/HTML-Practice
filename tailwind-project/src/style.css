@@ -85,4 +85,15 @@
     -ms-overflow-style: none;
 }
 
+@utility search-cancel-hide {
+    &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+@utility bg-center-right{
+    background-position : center right;
+}
+
 
