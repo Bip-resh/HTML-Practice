@@ -6,8 +6,22 @@
     <title>category</title>
 </head>
 <body>
-    <p class="text-4xl font-bold">Polash</p>
+    <load src="./sections/home/header.html"/>
 
+    <main class="w-screen h-auto  px-4 sm:px-10 lg:px-25 ">
+        <div class=" border-t border-black/10">
+            <div class="flex gap-1.5">
+                <div class="flex gap-1 items-center font-sans text-sm opacity-60  ">
+                    <p>Home</p>
+                    <img src="./src/assets/image/down.svg" class="h-3.5 w-3.5 object-cover -rotate-90 mt-px">
+                </div>
+                <p>Casual</p>
+            </div>
+
+            <load src="./sections/category/filter.html"/>
+
+        </div>
+    </main>
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
