@@ -13,6 +13,9 @@
 @font-face {
     font-family: "integral-cf";
     src: url("./assets/font/Fontspring-DEMO-integralcf-regular.otf") format("opentype");
+    ascent-override: 89%;
+    descent-override: 11%;
+    
 }
 
 @font-face {
@@ -80,10 +83,7 @@
     background-position: center right;
 }
 
-@utility scrollbar-hide {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
+
 
 @utility search-cancel-hide {
     &::-webkit-search-cancel-button {

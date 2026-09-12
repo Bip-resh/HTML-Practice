@@ -1,0 +1,138 @@
+<header class="sticky top-0 z-105 bg-[#FFFFFF]">
+
+    <div class="h-8.5 w-full  bg-black flex  justify-center  items-center
+     has-checked:hidden">
+
+        <div class="flex justify-center items-center ">
+            <p class="bg-[#000000] font-satoshi font-normal text-[#FFFFFF] text-[12px] sm:text-sm leading-[100%] inline-block">Sign
+                up and
+                get
+                20% off to your first
+                order.
+            </p>
+            
+            <a class="font-satoshi font-medium text-[12px] ml-1  text-white underline underline-offset-4 cursor-pointer">
+                Sign Up Now
+            </a>
+        </div>
+
+        <div class="hidden absolute sm:right-10 lg:right-25 sm:flex">
+            <input type="checkbox" id="announcement-checkbox"  class="hidden">
+            <label for="announcement-checkbox" class="h-6 w-6 cursor-pointer">
+                <img src="../src/assets/image/whiteXmark.svg">
+            </label>
+        </div>
+
+    </div>
+
+    <div class=" flex justify-between items-center px-4 py-5 sm:px-10 lg:px-25 lg:py-6 ">
+
+        <div class="flex justify-start items-center gap-1 lg:gap-4 sm:flex-1">
+
+            <!-- for left side of small device  -->
+            <div class="sm:hidden">
+                <input type="checkbox" id="cbid" class="peer hidden">
+                
+                <label for="cbid" class="peer-checked:hidden cursor-pointer">
+                    <div class="h-7 w-7 hover:scale-105 active:scale-95  ">
+                        <img src="/src/assets/image/menu.svg" alt="Menu" class="h-full w-full object-cover">
+                    </div>
+                </label>
+                
+                <label for="cbid" class="peer-not-checked:hidden cursor-pointer">
+                    <div class="h-7 w-7 hover:scale-105 active:scale-95  sm:hidden ">
+                        <img src="/src/assets/image/xmark.svg" alt="X mark" class="h-full w-full object-cover ">
+                    </div>
+                </label>
+
+                
+                
+                
+                
+                <div
+                    class="fixed top-25.5 bottom-0 left-0 right-0 sm:hidden bg-amber-50 z-10 peer-not-checked:-translate-x-full transition-all duration-100 px-4 py-5 text-2xl flex flex-col gap-4">
+                   
+                    <div class="group hover:bg-amber-100 active:bg-blue-200 py-2 border-b border-black flex justify-between cursor-pointer " >
+                        <a href="#" class="inline-block group-hover:-translate-y-2 " >Shop</a>
+                        <img src="../src/assets/image/down.svg" class="h-6 w-6 object-cover group-hover:-translate-y-2">
+                    </div>
+
+                    <div class="group hover:bg-amber-100 active:bg-blue-200  py-2 border-b border-black flex justify-between cursor-pointer">
+                        <a href="#" class="inline-block group-hover:-translate-y-2 " >On Sale</a>
+                        <img src="../src/assets/image/down.svg" class="h-6 w-6 object-cover group-hover:-translate-y-2">
+                    </div>
+
+                    <div class="group hover:bg-amber-100 active:bg-blue-200 py-2 border-b border-black flex justify-between cursor-pointer">
+                        <a href="#" class="inline-block group-hover:-translate-y-2">New Arrivals                           
+                        </a>
+                        <img src="../src/assets/image/down.svg" class="h-6 w-6 object-cover group-hover:-translate-y-2">
+                    </div>
+
+                    <div class="group hover:bg-amber-100 active:bg-blue-200 py-2 border-b border-black flex justify-between cursor-pointer ">
+                        <a href="#" class="inline-block group-hover:-translate-y-2 ">Brands    
+                        </a>
+                        <img src="../src/assets/image/down.svg" class="h-6 w-6 object-cover group-hover:-translate-y-2">
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="font-integral-cf top-5 leading-none  shrink-0  font-bold text-[25.2px]  lg:text-4xl ">
+                
+                SHOP.CO
+                
+            </div>
+
+            <!-- list for bigger device than sm -->
+            <div
+                class=" hidden items-center shrink-0 gap-2 ml-3 font-satoshi font-normal text-sm sm:flex lg:text-base lg:gap-6 lg:ml-10  ">
+
+                <div class=" hover:scale-105 active:scale-95 cursor-pointer ">
+                    <a href="#">Shop</a>
+                </div>
+                <div class="hover:scale-105 active:scale-95 cursor-pointer">
+                    <a href="#">On Sale</a>
+                </div>
+                <div class="hover:scale-105 active:scale-95 cursor-pointer">
+                    <a href="#">New Arrivals</a>
+                </div>
+                <div class="hover:scale-105 active:scale-95 cursor-pointer">
+                    <a href="#">Brands</a>
+                </div>
+            </div>
+
+            <!-- search bar for device bigger than sm -->
+            <div
+                class=" group hidden sm:flex-1  mx-1 justify-start items-center gap-2  bg-[#F0F0F0]/60  hover:bg-[#F0F0F0] focus-within:outline-2 focus-within:outline-black px-2 rounded-4xl sm:flex sm:h-12  lg:gap-2 lg:mx-10  ">
+
+                    <label for="search">
+                        <img src="/src/assets/image/search.svg" alt="Search" class="h-4 w-4 group-hover:scale-110">
+                    </label>
+                    <input type="search" id="search" placeholder="Search for products..."
+                        class="font-satoshi font-normal text-[10px] h-full outline-none search-cancel-hide sm:m-2.5 lg:text-base group-hover:scale-102 w-full " >
+            </div>
+
+        </div>
+
+
+
+        <div class="flex items-center gap-4 sm:gap-1 ">
+
+            <!-- search button for small device -->
+            <button class="h-7 w-7 sm:hidden hover:scale-105 active:scale-95 cursor-pointer ">
+                <img src="/src/assets/image/search.svg" alt="Search">
+            </button>
+
+
+            <!-- buttons for both small and bigger device -->
+            <button class="h-7 w-7 hover:scale-105 active:scale-95  sm:h-4 sm:w-4 lg:h-6 lg:w-6 cursor-pointer">
+                <img src="/src/assets/image/cart.svg" alt="Cart">
+            </button>
+
+            <button class="h-7 w-7 hover:scale-105 active:scale-95  sm:h-4 sm:w-4 lg:h-6 lg:w-6 cursor-pointer">
+                <img src="/src/assets/image/account.svg" alt="Account">
+            </button>
+        </div>
+    </div>
+</header>
