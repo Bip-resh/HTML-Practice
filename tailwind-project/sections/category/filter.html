@@ -50,6 +50,7 @@
         </div>
 
         <div class="mt-5">
+
             <div class="w-full flex justify-between items-center">
                 <p class="font-satoshi font-bold text-[20px]">
                     Price
@@ -58,10 +59,176 @@
                     <img src="../../src/assets/image/down.svg" class="h-full w-full object-contain rotate-x-180">
                 </div>
             </div>
-            <div>
-                <input type="range" min="1" max="1000" class="w-full">
+
+
+            <div class="w-full h-1 pb-8">
+                <div class=" w-full h-1.5 bg-[#F0F0F0] rounded-full top-0"></div>
+
+                <div id="activeTrack" class=" w-[60%] h-1.5 bg-black rounded-full -translate-y-1.5 translate-x-[34%]"></div>
+
+                <input type="range" id="minRange" min="0" value="50" max="250" value="50" class="appearance-none w-full h-1 m-0  bg-transparent pointer-events-none -translate-y-6
+                                   [&::-webkit-slider-thumb]:pointer-events-auto
+                                   [&::-webkit-slider-thumb]:appearance-none
+                                   [&::-webkit-slider-thumb]:h-5
+                                   [&::-webkit-slider-thumb]:w-5
+                                   [&::-webkit-slider-thumb]:rounded-full
+                                   [&::-webkit-slider-thumb]:bg-black
+                                   [&::-webkit-slider-thumb]:cursor-pointer
+                                   ">
+            
+                <input type="range" min="0" max="250" value="200" class="w-full h-1  appearance-none bg-transparent pointer-events-none -translate-y-12
+                                        [&::-webkit-slider-thumb]:pointer-events-auto
+                                        [&::-webkit-slider-thumb]:appearance-none
+                                        [&::-webkit-slider-thumb]:h-5
+                                        [&::-webkit-slider-thumb]:w-5
+                                        [&::-webkit-slider-thumb]:bg-black
+                                        [&::-webkit-slider-thumb]:rounded-full 
+                                        [&::-webkit-slider-thumb]:cursor-pointer">
+                                        
+                <div class="w-[62%] flex justify-between items-center font-satoshi font-medium text-sm -translate-y-11 translate-x-[31%]">
+                    <span>$50</span>
+                    <span>$200</span>
+                </div>
+                                        
+            </div>
+
+            <div class="mt-6 mb-5 w-full h-px bg-[#0000001A]">
                 
             </div>
+
+            <div class="flex flex-col gap-4">
+
+                <div class="flex justify-between ">
+                    <p class="font-satoshi font-bold text-xl">Colors</p>
+                    <div>
+                        <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
+                    </div>
+                </div>
+                
+                <div class="flex gap-4 flex-wrap">
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]">
+
+                        <input type="radio" id="green" name="color-options" class="peer hidden">
+
+                        <label for="green" class="block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer" ></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]  ">
+
+                        <input type="radio" id="red" name="color-options" class="peer hidden">
+
+                        <label for="red" class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg"
+                                class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F5DD06]">
+
+                        <input type="radio" id="yellow" 
+                        name="color-options" class="peer hidden">
+
+                        <label for="yellow" class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F57906]">
+
+                        <input type="radio" id="orange" name="color-options" class="peer hidden">
+
+                        <label for="orange" class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#06CAF5]">
+
+                        <input type="radio" id="cyan" name="color-options" class="peer hidden">
+
+                        <label for="cyan" class="col-start-1 row-start-1 block  h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#063AF5]">
+
+                        <input type="radio" id="blue" name="color-options" class="peer hidden">
+
+                        <label for="blue" class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#7D06F5]"> 
+                        <input type="radio" id="violet" name="color-options" class="peer hidden">
+
+                        <label for="violet" class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F506A4]">
+
+                        <input type="radio" id="pink" name="color-options" class="peer hidden">
+
+                        <label for="pink" class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#FFFFFF]">
+
+                        <input type="radio" id="white" name="color-options" class="peer hidden">
+
+                        <label for="white" class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correctWhite.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#000000]">
+
+                        <input type="radio" id="black" name="color-options" class="peer hidden">
+
+                        <label for="black" class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+
+                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
