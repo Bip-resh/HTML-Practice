@@ -6,26 +6,49 @@
     <title>category</title>
 </head>
 <body>
-    <load src="./sections/home/header.html"/>
 
-    <main class="w-screen h-auto  px-4 sm:px-10 lg:px-25 ">
-
-        <div class=" border-t border-black/10 ">
-
-            <div class="flex gap-1.5 mt-5 pb-3 sm:pb-6 sm:mt-6">
-                <div class="flex gap-1 items-center font-sans text-sm opacity-60  ">
-                    <p>Home</p>
-                    <img src="./src/assets/image/down.svg" class="h-3.5 w-3.5 object-cover -rotate-90 mt-px">
+    <div>
+        <load src="./sections/home/header.html" />
+        
+        <main class="w-full h-auto  px-4 sm:px-10 lg:px-25 ">
+        
+            <div class=" border-t border-black/10 ">
+        
+                <div class="flex gap-1.5 mt-5 pb-3 sm:pb-6 sm:mt-6">
+                    <div class="flex gap-1 items-center font-sans text-sm sm:text-base">
+                        <p class="opacity-60">Home</p>
+                        <img src="./src/assets/image/down.svg" class="h-3.5 w-3.5 sm:h-4 sm:w-4 object-cover -rotate-90 mt-px">
+                    </div>
+                    <p>Casual</p>
                 </div>
-                <p>Casual</p>
+        
+                <div>
+
+                    <div class="grid sm:grid-cols-10 md:grid-cols-4 gap-5">
+        
+                    <div class="hidden sm:block sm:col-span-3 md:col-span-1">
+                        <load src="./sections/category/filter.html" />
+                    </div>
+        
+                    <div class=" col-span-2 sm:col-span-7 md:col-span-3 flex-1">
+                        <load src="./sections/category/mobile.html" />
+                    </div>
+        
+                </div>
+                </div>
+        
+        
+        
+        
+        
             </div>
+        
+        </main>
 
-            <load src="./sections/category/mobile.html"/>
- 
-            
+        <load src="./sections/home/footer.html" />
+    </div>
 
-        </div>
-    </main>
+    
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>

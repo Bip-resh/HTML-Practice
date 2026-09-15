@@ -6,397 +6,431 @@
     <title>filter</title>
 </head>
 <body>
-    <div>
-        <div class=" mt-5 pb-4 w-full flex justify-between items-center
-        border-b border-black/10">
-            <p class="font-satoshi font-bold text-[20px]">filters</p>
-            <img src="../../src/assets/image/xmark.svg" class="h-6 w-6">
-        </div>
+    
+    <div class="border border-black/10 rounded-2xl lg:rounded-4xl">
 
-        <div class="py-6 border-b border-black/10 flex flex-col gap-5 ">
-
-            <div class="flex justify-between items-center opacity-60">
-                <p class="font-satoshi font-normal text-base">T-shirts</p>
-                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
+        <div class="mt-5 mx-6">
+            <div class="pb-4 w-full flex justify-between items-center
+                border-b border-black/10">
+                <p class="font-satoshi font-bold text-[20px]">filters</p>
+                <img src="../../src/assets/image/filter.svg" class="h-6 w-6">
             </div>
+        
+            <div class="py-6 border-b border-black/10 flex flex-col gap-5 ">
+        
+                <div class="flex justify-between items-center opacity-60 cursor-pointer hover:scale-x-102 active:scale-x-98">
 
-            <div class="flex justify-between items-center opacity-60">
-                <p class="font-satoshi font-normal text-base">
-                    Shorts
-                </p>
-                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
-            </div>
+                    <p class="font-satoshi font-normal text-base">T-shirts</p>
+                    <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
 
-            <div class="flex justify-between items-center opacity-60">
-                <p class="font-satoshi font-normal text-base">
-                    Shirts
-                </p>
-                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
-            </div>
+                </div>
+        
+                <div class="flex justify-between items-center opacity-60 cursor-pointer hover:scale-x-102 active:scale-x-98">
+                    
+                    <p class="font-satoshi font-normal text-base">
+                        Shorts
+                    </p>
+                    <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
 
-            <div class="flex justify-between items-center opacity-60">
-                <p class="font-satoshi font-normal text-base">
-                    Hoodie
-                </p>
-                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
-            </div>
-
-            <div class="flex justify-between items-center opacity-60">
-                <p class="font-satoshi font-normal text-base">
-                    Jeans
-                </p>
-                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
-            </div>
-        </div>
-
-        <div class="mt-5 pb-6.25">
-
-            <div class="w-full flex justify-between items-center">
-                <p class="font-satoshi font-bold text-[20px]">
-                    Price
-                </p>
-                <div class="h-4 w-4">
-                    <img src="../../src/assets/image/down.svg" class="h-full w-full object-contain rotate-x-180">
+                </div>
+        
+                <div class="flex justify-between items-center opacity-60 cursor-pointer hover:scale-x-102 active:scale-x-98">
+                    <p class="font-satoshi font-normal text-base ">
+                        Shirts
+                    </p>
+                    <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
+                </div>
+        
+                <div class="flex justify-between items-center opacity-60 cursor-pointer hover:scale-x-102 active:scale-x-98">
+                    <p class="font-satoshi font-normal text-base">
+                        Hoodie
+                    </p>
+                    <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
+                </div>
+        
+                <div class="flex justify-between items-center opacity-60 cursor-pointer hover:scale-x-102 active:scale-x-98">
+                    <p class="font-satoshi font-normal text-base">
+                        Jeans
+                    </p>
+                    <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover ">
                 </div>
             </div>
 
-
-            <div class="w-full h-1 pb-8">
-                <div class=" w-full h-1.5 bg-[#F0F0F0] rounded-full top-0"></div>
-
-                <div id="activeTrack" class=" w-[60%] h-1.5 bg-black rounded-full -translate-y-1.5 translate-x-[34%]"></div>
-
-                <input type="range" id="minRange" min="0" value="50" max="250" value="50" class="appearance-none w-full h-1 m-0  bg-transparent pointer-events-none -translate-y-6
-                                   [&::-webkit-slider-thumb]:pointer-events-auto
-                                   [&::-webkit-slider-thumb]:appearance-none
-                                   [&::-webkit-slider-thumb]:h-5
-                                   [&::-webkit-slider-thumb]:w-5
-                                   [&::-webkit-slider-thumb]:rounded-full
-                                   [&::-webkit-slider-thumb]:bg-black
-                                   [&::-webkit-slider-thumb]:cursor-pointer
-                                   ">
             
-                <input type="range" min="0" max="250" value="200" class="w-full h-1  appearance-none bg-transparent pointer-events-none -translate-y-12
-                                        [&::-webkit-slider-thumb]:pointer-events-auto
-                                        [&::-webkit-slider-thumb]:appearance-none
-                                        [&::-webkit-slider-thumb]:h-5
-                                        [&::-webkit-slider-thumb]:w-5
-                                        [&::-webkit-slider-thumb]:bg-black
-                                        [&::-webkit-slider-thumb]:rounded-full 
-                                        [&::-webkit-slider-thumb]:cursor-pointer">
-                                        
-                <div class="w-[62%] flex justify-between items-center font-satoshi font-medium text-sm -translate-y-11 translate-x-[31%]">
-                    <span>$50</span>
-                    <span>$200</span>
-                </div>
-                                        
-            </div>
+        
+            <div class="mt-5 pb-6.25">
 
-            <div class="mt-6 mb-5 w-full h-px bg-[#0000001A]">
-                
-            </div>
-
-            <!-- color section -->
-
-            <div class="flex flex-col gap-4 pb-5 border-b border-black/10">
-
-                <div class="flex justify-between ">
-                    <p class="font-satoshi font-bold text-xl">Colors</p>
-                    <div>
-                        <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
+                <!-- price section -->
+        
+                <div class="w-full flex justify-between items-center">
+                    <p class="font-satoshi font-bold text-[20px]">
+                        Price
+                    </p>
+                    <div class="h-4 w-4">
+                        <img src="../../src/assets/image/down.svg" class="h-full w-full object-contain rotate-x-180">
                     </div>
                 </div>
-                
-                <div class="flex gap-4 flex-wrap">
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]">
-
-                        <input type="radio" id="green" name="color-options" class="peer hidden">
-
-                        <label for="green" class="block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer" ></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+        
+        
+                <div class="w-full h-1 pb-8">
+                    <div class=" w-full h-1.5 bg-[#F0F0F0] rounded-full top-0"></div>
+        
+                    <div id="activeTrack" class=" w-[60%] h-1.5 bg-black rounded-full -translate-y-1.5 translate-x-[34%]"></div>
+        
+                    <input type="range" id="minRange" min="0" value="50" max="250" value="50" class="appearance-none w-full h-1 m-0  bg-transparent pointer-events-none -translate-y-6
+                                           [&::-webkit-slider-thumb]:pointer-events-auto
+                                           [&::-webkit-slider-thumb]:appearance-none
+                                           [&::-webkit-slider-thumb]:h-5
+                                           [&::-webkit-slider-thumb]:w-5
+                                           [&::-webkit-slider-thumb]:rounded-full
+                                           [&::-webkit-slider-thumb]:bg-black
+                                           [&::-webkit-slider-thumb]:cursor-pointer
+                                           ">
+        
+                    <input type="range" min="0" max="250" value="200" class="w-full h-1  appearance-none bg-transparent pointer-events-none -translate-y-12
+                                                [&::-webkit-slider-thumb]:pointer-events-auto
+                                                [&::-webkit-slider-thumb]:appearance-none
+                                                [&::-webkit-slider-thumb]:h-5
+                                                [&::-webkit-slider-thumb]:w-5
+                                                [&::-webkit-slider-thumb]:bg-black
+                                                [&::-webkit-slider-thumb]:rounded-full 
+                                                [&::-webkit-slider-thumb]:cursor-pointer">
+        
+                    <div
+                        class="w-[62%] flex justify-between items-center font-satoshi font-medium text-sm -translate-y-11 translate-x-[31%]">
+                        <span>$50</span>
+                        <span>$200</span>
+                    </div>
+        
+                </div>
+        
+                <div class="mt-6 mb-5 w-full h-px bg-[#0000001A]">
+        
+                </div>
+        
+                <!-- color section -->
+        
+                <div class="flex flex-col gap-4 pb-5 border-b border-black/10">
+        
+                    <div class="flex justify-between ">
+                        <p class="font-satoshi font-bold text-xl">Colors</p>
+                        <div>
+                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
                         </div>
+                    </div>
+        
+                    <div class="flex gap-4 flex-wrap">
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]">
+        
+                            <input type="radio" id="green" name="color-options" class="peer hidden">
+        
+                            <label for="green"
+                                class="block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]  ">
+        
+                            <input type="radio" id="red" name="color-options" class="peer hidden">
+        
+                            <label for="red"
+                                class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F5DD06]">
+        
+                            <input type="radio" id="yellow" name="color-options" class="peer hidden">
+        
+                            <label for="yellow"
+                                class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F57906]">
+        
+                            <input type="radio" id="orange" name="color-options" class="peer hidden">
+        
+                            <label for="orange"
+                                class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#06CAF5]">
+        
+                            <input type="radio" id="cyan" name="color-options" class="peer hidden">
+        
+                            <label for="cyan"
+                                class="col-start-1 row-start-1 block  h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#063AF5]">
+        
+                            <input type="radio" id="blue" name="color-options" class="peer hidden">
+        
+                            <label for="blue"
+                                class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#7D06F5]">
+                            <input type="radio" id="violet" name="color-options" class="peer hidden">
+        
+                            <label for="violet"
+                                class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F506A4]">
+        
+                            <input type="radio" id="pink" name="color-options" class="peer hidden">
+        
+                            <label for="pink"
+                                class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#FFFFFF]">
+        
+                            <input type="radio" id="white" name="color-options" class="peer hidden">
+        
+                            <label for="white"
+                                class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correctWhite.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+                        <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#000000]">
+        
+                            <input type="radio" id="black" name="color-options" class="peer hidden">
+        
+                            <label for="black"
+                                class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
+        
+                            <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
+                                <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+                <!-- size section -->
+        
+                <div class="mt-5 ">
+        
+                    <div class="flex justify-between ">
+                        <p class="font-satoshi font-bold text-xl">Size</p>
+                        <div>
+                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
+                        </div>
+                    </div>
+        
+                    <div class="mt-4 pb-5 border-b border-black/10 flex gap-2 flex-wrap">
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+
+                            <input type="radio" name="size_radio" id="xx-small" class="hidden">
+                            <label for="xx-small"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">XX-Small</label>
+
+                        </div>
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="x-small" class="hidden">
+        
+                            <label for="x-small"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">X-Small</label>
+        
+                        </div>
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="small" class="hidden">
+        
+                            <label for="small" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Small</label>
+        
+                        </div>
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" checked name="size_radio" id="medium" class="hidden">
+        
+                            <label for="medium"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Medium</label>
+        
+                        </div>
+        
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="large" class="hidden">
+        
+                            <label for="large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Large</label>
+        
+                        </div>
+        
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="x-large" class="hidden">
+        
+                            <label for="x-large"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">X-Large</label>
+        
+                        </div>
+        
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="xx-large" class="hidden">
+        
+                            <label for="xx-large"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">XX-Large</label>
+        
+                        </div>
+        
+        
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
+        
+                            <input type="radio" name="size_radio" id="3x-large" class="hidden">
+        
+                            <label for="3x-large"
+                                class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">3X-Large</label>
+        
+                        </div>
+
+
+                        <div
+                            class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
                         
-                    </div>
-
-                    
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#00C12B]  ">
-
-                        <input type="radio" id="red" name="color-options" class="peer hidden">
-
-                        <label for="red" class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg"
-                                class="h-4 w-4 ">
+                            <input type="radio" name="size_radio" id="4x-large" class="hidden">
+                        
+                            <label for="4x-large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">4X-Large</label>
+                        
                         </div>
+        
+        
                     </div>
-
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F5DD06]">
-
-                        <input type="radio" id="yellow" 
-                        name="color-options" class="peer hidden">
-
-                        <label for="yellow" class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F57906]">
-
-                        <input type="radio" id="orange" name="color-options" class="peer hidden">
-
-                        <label for="orange" class=" block col-start-1 row-start-1 h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#06CAF5]">
-
-                        <input type="radio" id="cyan" name="color-options" class="peer hidden">
-
-                        <label for="cyan" class="col-start-1 row-start-1 block  h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#063AF5]">
-
-                        <input type="radio" id="blue" name="color-options" class="peer hidden">
-
-                        <label for="blue" class=" col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#7D06F5]"> 
-                        <input type="radio" id="violet" name="color-options" class="peer hidden">
-
-                        <label for="violet" class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#F506A4]">
-
-                        <input type="radio" id="pink" name="color-options" class="peer hidden">
-
-                        <label for="pink" class="col-start-1 row-start-1 block h-full w-full cursor-pointer rounded-full"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#FFFFFF]">
-
-                        <input type="radio" id="white" name="color-options" class="peer hidden">
-
-                        <label for="white" class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correctWhite.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-                    <div class="grid h-9.25 w-9.25 rounded-full ring-1 ring-black/20 bg-[#000000]">
-
-                        <input type="radio" id="black" name="color-options" class="peer hidden">
-
-                        <label for="black" class="col-start-1 row-start-1 block h-full w-full rounded-full cursor-pointer"></label>
-
-                        <div class="col-start-1 row-start-1 hidden justify-center items-center peer-checked:flex ">
-                            <img src="../../src/assets/image/correct.svg" class="h-4 w-4 ">
-                        </div>
-                    </div>
-
-
+        
+        
                 </div>
+        
+        
+        
+                <!-- dress style  -->
+                <div class="mt-5">
+        
+                    <div class="flex justify-between">
+        
+                        <p class="font-satoshi font-bold text-xl">Dress Style</p>
+        
+                        <div>
+                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="mt-4 pb-5 flex flex-col gap-5">
+        
+                        <div class="flex justify-between items-center opacity-60 cursor:pointer hover:scale-x-105 active:scale-x-95">
+                            <p class="font-satoshi font-normal text-base leading-[100%] ">Casual</p>
+        
+                            <div>
+                                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
+                            </div>
+                        </div>
+        
+        
+                        <div class="flex justify-between items-center opacity-60 cursor:pointer hover:scale-x-105 active:scale-x-95">
+                            <p class="font-satoshi font-normal text-base leading-[100%] ">Formal</p>
+        
+                            <div>
+                                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
+                            </div>
+                        </div>
+        
+        
+                        <div class="flex justify-between items-center opacity-60 cursor:pointer hover:scale-x-105 active:scale-x-95">
+                            <p class="font-satoshi font-normal text-base leading-[100%] ">Party</p>
+        
+                            <div>
+                                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
+                            </div>
+                        </div>
+        
+        
+                        <div class="flex justify-between items-center opacity-60 cursor:pointer hover:scale-x-105 active:scale-x-95">
+                            <p class="font-satoshi font-normal text-base leading-[100%] ">Gym</p>
+        
+                            <div>
+                                <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+        
+                <!-- Button -->
+        
+                <div>
+                    <button type="submit" class="w-full py-[14.5px] bg-black text-white rounded-[62px] cursor:pointer hover:scale-x-105 active:scale-x-95">Apple Filter</button>
+                </div>
+        
             </div>
 
-
-            <!-- size section -->
-
-            <div class="mt-5 "> 
-
-                <div class="flex justify-between ">
-                    <p class="font-satoshi font-bold text-xl">Size</p>
-                    <div>
-                        <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
-                    </div>
-                </div>
-
-                <div class="mt-4 pb-5 border-b border-black/10 flex gap-2 flex-wrap">
-
-                    <div 
-                    class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                        <input type="radio" name="size_radio" id="xx-small" class="hidden">
-                        <label for="xx-small" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">XX-Small</label>
-                    </div>
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-
-                        <input type="radio" name="size_radio" id="x-small" class="hidden">
-
-                        <label for="x-small" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">X-Small</label>
-
-                    </div>
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="small" class="hidden">
-                    
-                        <label for="small" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Small</label>
-                    
-                    </div>
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="medium" class="hidden">
-                    
-                        <label for="medium" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Medium</label>
-                    
-                    </div>
-
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="largr" class="hidden">
-                    
-                        <label for="large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">Large</label>
-                    
-                    </div>
-
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="x-large" class="hidden">
-                    
-                        <label for="x-large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">X-Large</label>
-                    
-                    </div>
-
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="xx-large" class="hidden">
-                    
-                        <label for="xx-small" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">XX-Small</label>
-                    
-                    </div>
-
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="3x-large" class="hidden">
-                    
-                        <label for="3x-large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">3X-Large</label>
-                    
-                    </div>
-
-
-                    <div
-                        class="inline-block bg-[#F0F0F0] rounded-full font-satoshi font-normal text-sm text-black/60 has-checked:bg-black has-checked:text-white has-checked:font-medium">
-                    
-                        <input type="radio" name="size_radio" id="4x-Large" class="hidden">
-                    
-                        <label for="4x-large" class="block h-full w-full px-5 py-2.5 rounded-full cursor-pointer">4X-Large</label>
-                    
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- dress style  -->
-            <div class="mt-5">
-            
-                <div class="flex justify-between ">
-            
-                    <p class="font-satoshi font-bold text-xl">Dress Style</p>
-            
-                    <div>
-                        <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-x-180">
-                    </div>
-            
-                </div>
-            
-            
-                <div class="mt-4 pb-5 flex flex-col gap-5">
-            
-                    <div class="flex justify-between items-center opacity-60">
-                        <p class="font-satoshi font-normal text-base leading-[100%] ">Casual</p>
-            
-                        <div>
-                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
-                        </div>
-                    </div>
-            
-            
-                    <div class="flex justify-between items-center opacity-60">
-                        <p class="font-satoshi font-normal text-base leading-[100%] ">Formal</p>
-            
-                        <div>
-                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
-                        </div>
-                    </div>
-            
-            
-                    <div class="flex justify-between items-center opacity-60">
-                        <p class="font-satoshi font-normal text-base leading-[100%] ">Party</p>
-            
-                        <div>
-                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
-                        </div>
-                    </div>
-            
-            
-                    <div class="flex justify-between items-center opacity-60">
-                        <p class="font-satoshi font-normal text-base leading-[100%] ">Gym</p>
-            
-                        <div>
-                            <img src="../../src/assets/image/down.svg" class="h-4 w-4 object-cover -rotate-90">
-                        </div>
-                    </div>
-            
-                </div>
-            </div>
-
-
-            <!-- Button -->
-            
-            <div>
-                <button type="submit" class="w-full py-[14.5px] bg-black text-white rounded-[62px]">Apple Filter</button>
-            </div>
 
         </div>
+
+
     </div>
 </body>
 </html>

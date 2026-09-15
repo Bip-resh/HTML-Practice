@@ -97,6 +97,8 @@
 }
 
 
-
-
+html:has(#filter:checked) {
+    overflow: auto;
+    height: auto ;
+}
 
