@@ -1,0 +1,53 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 192 192"
+    fill="none"
+>
+    <!-- Flower outline -->
+    <path
+        d="M96 22
+           C107 22 116 28 121 37
+           C131 33 143 35 151 43
+           C159 51 161 62 157 72
+           C166 77 171 86 171 96
+           C171 107 166 116 157 121
+           C161 131 159 142 151 150
+           C143 158 131 160 121 156
+           C116 165 107 171 96 171
+           C85 171 76 165 71 156
+           C61 160 49 158 41 150
+           C33 142 31 131 35 121
+           C26 116 21 107 21 96
+           C21 86 26 77 35 72
+           C31 62 33 51 41 43
+           C49 35 61 33 71 37
+           C76 28 85 22 96 22Z"
+        stroke="#1497CF"
+        stroke-width="14"
+        stroke-linejoin="round"
+    />
+
+    <!-- Diagonal slash -->
+    <path
+        d="M76 117L116 77"
+        stroke="#1497CF"
+        stroke-width="15"
+        stroke-linecap="round"
+    />
+
+    <!-- Top-left dot -->
+    <circle
+        cx="76"
+        cy="75"
+        r="10"
+        fill="#1497CF"
+    />
+
+    <!-- Bottom-right dot -->
+    <circle
+        cx="116"
+        cy="115"
+        r="10"
+        fill="#1497CF"
+    />
+</svg>
