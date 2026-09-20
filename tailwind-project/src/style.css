@@ -11,6 +11,16 @@
 
 
 @font-face {
+    font-family: "hankenGrotesk";
+    src: url("./assets/font/Hanken_Grotesk/HankenGrotesk-VariableFont[wght].ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
     font-family: "integral-cf";
     src: url("./assets/font/Fontspring-DEMO-integralcf-regular.otf") format("opentype");
     ascent-override: 89%;
@@ -34,6 +44,7 @@
     --font-integral-cf: 'integral-cf';
     --font-integral-cf-bold: 'integral-cf-bold';
     --font-doto: 'doto', sans-serif;
+    --font-hkg : 'hankenGrotesk' ,sans-serif ;
 }
 
 /* @layer base{

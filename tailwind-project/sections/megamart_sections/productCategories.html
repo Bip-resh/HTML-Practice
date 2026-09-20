@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+</head>
+<body>
+
+    <div class="flex flex-col gap-10 ">
+
+        <div class="w-full border-b- border-black/10 flex justify-between items-start">
+           
+            <p class="inline-block pb-4 border-b-2 border-[#008ECC] font-hkg font-bold text-2xl">Shop From 
+                <span class="text-[#008ECC]">Top Categories</span>
+            </p>
+        
+            <button
+                class="flex px-1  gap-1.5 items-center font-hkg text-base font-medium rounded-2xl mt-1.5 hover:scale-x-102 active:outline active:outline-black">
+                View all <img src="../../src/assets/image/megamart/down.svg" class="h-4.5 w-4.5 object-cover -rotate-90">
+            </button>
+        </div>
+
+
+        <div class="grid grid-flow-col auto-cols-33 gap-11.5 overflow-x-auto scrollbar-none">
+
+            <div class="flex flex-col gap-5 ">
+
+                <input type="radio" id="mobile" name="products" class="peer hidden"  >
+
+                <label for="mobile" class=" block h-33 w-33 peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25 bg-[#F5F5F5]">
+                    <img src="../../src/assets/image/megamart/mobile-1.png" class="h-full w-full object-contain">
+                </label>
+
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Mobile
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-5">
+
+                <input type="radio" id="cosmetics" name="products" class="peer hidden">
+
+                <label for="cosmetics" class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/cosmetics.png" class="h-full w-full object-contain">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Cosmetics
+                </div>
+            
+            </div>
+
+
+            <div class="flex flex-col gap-5">
+            
+                <input type="radio" id="electronics" name="products" class="peer hidden">
+            
+                <label for="electronics"
+                    class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/Electronics.png" class="h-full w-full object-contain">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Electronics
+                </div>
+            
+            </div>
+
+
+            <div class="flex flex-col gap-5">
+            
+                <input type="radio" id="furniture" name="products" class="peer hidden">
+            
+                <label for="furniture"
+                    class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/furniture.png" class="h-full w-full object-contain rounded-full">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Furniture
+                </div>
+            
+            </div>
+
+
+            <div class="flex flex-col gap-5">
+            
+                <input type="radio" id="watches" name="products" class="peer hidden">
+            
+                <label for="watches"
+                    class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/watches.png" class="h-full w-full object-contain rounded-full">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Watches
+                </div>
+            
+            </div>
+
+
+            <div class="flex flex-col gap-5">
+            
+                <input type="radio" id="decor" name="products" class="peer hidden">
+            
+                <label for="decor"
+                    class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/decor.png" class="h-full w-full object-contain rounded-full">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Decor
+                </div>
+            
+            </div>
+
+            <div class="flex flex-col gap-5">
+            
+                <input type="radio" id="accessories" name="products" class="peer hidden">
+            
+                <label for="accessories"
+                    class=" block h-33 w-33 bg-[#F5F5F5] peer-checked:border peer-checked:border-[#008ECC] rounded-full p-4.25">
+                    <img src="../../src/assets/image/megamart/accessories.png" class="h-full w-full object-contain rounded-full">
+                </label>
+            
+                <div class="font-hkg font-normal text-base leading-5 text-center">
+                    Accessories
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
