@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "hankenGrotesk";
+  src: url("./assets/font/Hanken_Grotesk/HankenGrotesk-VariableFont[wght].ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@theme{
+  --font-hkg: 'hankenGrotesk', sans-serif;
+}
