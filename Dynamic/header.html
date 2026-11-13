@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="px-10 h-10 w-full bg-gray-200 flex justify-between items-center">
+
+
+        <div class="flex items-center gap-20">
+
+            <div class="h-10 w-10  ">
+                <img src="src/header_pic/logo.svg" alt="logo" class="h-full  w-10">
+            </div>
+            
+            <div class="flex gap-3 items-center ">
+                <a>Home</a>
+                <a>products</a>
+                <a>collections</a>
+                <a>About</a>
+                <a>Contacts</a>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3 ">
+            <img src="src/header_pic/cart.svg" alt="cart" class="h-6 w-6">
+
+
+            <div class="inline-grid">
+            
+                <button class="notiBtn col-start-1 row-start-1 cursor-pointer hover:scale-105 active:scale-95">
+                    <img src="src/header_pic/account.svg" alt="account" class="h-6 w-6 rounded-full">
+                </button>
+            
+                <p class="notification hidden col-start-1 row-start-1 justify-self-center
+                        -translate-y-2 pointer-events-none h-4 w-4 items-center justify-center
+                        rounded-full bg-blue-500 text-sm text-black">0</p>
+            
+            </div>
+        </div>
+    </header>
+
+
+    <script type="module" src="/header.js"></script>
+</body>
+</html>

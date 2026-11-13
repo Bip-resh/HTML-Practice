@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>products card</title>
+</head>
+<body>
+
+    <div class="px-10 h-auto flex flex-col gap-3  ">
+
+        <p class=" text-2xl text-black font-bold">Products</p>
+
+        <div class="flex flex-col justify-start gap-4 border border-black/10 w-60 rounded-2xl p-4">
+
+            <div class="h-auto w-50 rounded-2xl overflow-hidden">
+                <div class="h-40 w-50">
+                    <img src="./src/products_pics/shirt.png" alt="shirt" class="h-full w-full  object-cover">
+                </div>
+            </div>
+            
+            <div class="h-auto w-50 flex flex-col gap-2">
+                <p class="text-lg font-bold text-black ">Shirt</p>
+                <p class="text-sm font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quis.</p>
+                <p class="text-xl font-medium text-black">Price : 120$</p>
+
+                <div class="flex flex-col justify-center gap-2">
+                    <div class="flex items-center justify-between bg-amber-100 px-4 py-2 rounded-full ">
+                        <button type="submit" class="btn-decrease hover:scale-110 active:scale-90 cursor-pointer ">
+                            <img src="./src/products_pics/minus.svg" alt="minus" class="h-5 w-5 ">
+                        </button>
+
+                        <p class="quantity text-lg text-black font-semibold text-center ">
+                            0
+                        </p>
+
+                        <button type="submit"  class="btn-increase hover:scale-110 active:scale-90 cursor-pointer ">
+                            <img src="./src/products_pics/plusIcon.svg" alt="plus" class="h-5 w-5 ">
+                        </button>
+                    </div>
+
+
+                    <button type="submit" class="addCartBtn bg-blue-500 text-sm text-bold  text-black px-4 py-2 rounded-2xl cursor-pointer  ">
+                        Add to cart 
+                    </button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="/products.js"></script>
+</body>
+</html>

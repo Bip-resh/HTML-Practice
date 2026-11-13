@@ -1,0 +1,36 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 180 180"
+     width="180"
+     height="180">
+
+  <!-- Shopping bag -->
+  <path d="M45 65
+           Q45 55 55 55
+           H125
+           Q135 55 135 65
+           L142 145
+           Q143 155 132 155
+           H48
+           Q37 155 38 145 Z"
+        fill="#2563EB"/>
+
+  <!-- Bag handle -->
+  <path d="M65 58
+           V43
+           A25 25 0 0 1 115 43
+           V58"
+        fill="none"
+        stroke="#2563EB"
+        stroke-width="10"
+        stroke-linecap="round"/>
+
+  <!-- Letter N -->
+  <path d="M65 130 V82 L115 130 V82"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="12"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+</svg>
