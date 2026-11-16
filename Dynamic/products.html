@@ -10,45 +10,72 @@
 
     <div class="px-10 h-auto flex flex-col gap-3  ">
 
-        <p class=" text-2xl text-black font-bold">Products</p>
+        <p class=" text-3xl text-black font-bold">Products</p>
 
-        <div class="flex flex-col justify-start gap-4 border border-black/10 w-60 rounded-2xl p-4">
+        <div class="product-container p-4 flex w-auto h-auto border border-black/10 rounded-lg overflow-scroll scrollbar-none">
 
-            <div class="h-auto w-50 rounded-2xl overflow-hidden">
-                <div class="h-40 w-50">
-                    <img src="./src/products_pics/shirt.png" alt="shirt" class="h-full w-full  object-cover">
-                </div>
-            </div>
-            
-            <div class="h-auto w-50 flex flex-col gap-2">
-                <p class="text-lg font-bold text-black ">Shirt</p>
-                <p class="text-sm font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quis.</p>
-                <p class="text-xl font-medium text-black">Price : 120$</p>
+            <template class="product-template ">
 
-                <div class="flex flex-col justify-center gap-2">
-                    <div class="flex items-center justify-between bg-amber-100 px-4 py-2 rounded-full ">
-                        <button type="submit" class="btn-decrease hover:scale-110 active:scale-90 cursor-pointer ">
-                            <img src="./src/products_pics/minus.svg" alt="minus" class="h-5 w-5 ">
-                        </button>
+                <div class="flex flex-col justify-start mr-4 item-start ">
 
-                        <p class="quantity text-lg text-black font-semibold text-center ">
-                            0
-                        </p>
-
-                        <button type="submit"  class="btn-increase hover:scale-110 active:scale-90 cursor-pointer ">
-                            <img src="./src/products_pics/plusIcon.svg" alt="plus" class="h-5 w-5 ">
-                        </button>
+                    <div class="flex flex-col justify-center items-center gap-4 border border-black/10 h-120 w-70 rounded-2xl p-4">
+                    
+                        <div class="h-4/10 w-65 rounded-2xl overflow-hidden">
+                            <div class="h-full  w-full  ">
+                                <img src="./src/products_pics/shirt.png" alt="shirt" class="product-image h-full w-full  object-cover">
+                            </div>
+                        </div>
+                    
+                        <div class="h-6/10 w-65 flex flex-col justify-center gap-3">
+                            <p class="product-name text-xl font-bold text-black ">Shirt</p>
+                            <p class="product-details text-base font-normal ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Temporibus, quis.</p>
+                            <p class="product-price text-xl font-medium text-black">Price : 120$</p>
+                    
+                            <div class="flex flex-col justify-center gap-3">
+                                <div class="flex items-center justify-between bg-amber-100 px-4 py-2 rounded-full ">
+                                    <button type="submit" class="btn-decrease hover:scale-110 active:scale-90 cursor-pointer ">
+                                        <img src="./src/products_pics/minus.svg" alt="minus" class="h-5 w-5 ">
+                                    </button>
+                    
+                                    <p class="quantity text-lg text-black font-semibold text-center ">
+                                        0
+                                    </p>
+                    
+                                    <button type="submit" class="btn-increase hover:scale-110 active:scale-90 cursor-pointer ">
+                                        <img src="./src/products_pics/plusIcon.svg" alt="plus" class="h-5 w-5 ">
+                                    </button>
+                                </div>
+                    
+                    
+                                <div class="inline-grid ">
+                    
+                                    <button type="submit"
+                                        class="addCartBtn col-start-1 row-start-1 bg-blue-500 text-sm text-bold  text-black px-4 py-2 rounded-2xl cursor-pointer  ">
+                                        Add to cart
+                                    </button>
+                    
+                                    <div class="loading col-start-1 row-start-1 hidden justify-center items-center">
+                    
+                                        <div class="h-6 w-6 border-4 border-grey-300 border-t-blue-600 rounded-full animate-spin">
+                    
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                    
+                    
+                            </div>
+                        </div>
                     </div>
 
-
-                    <button type="submit" class="addCartBtn bg-blue-500 text-sm text-bold  text-black px-4 py-2 rounded-2xl cursor-pointer  ">
-                        Add to cart 
-                    </button>
-
-
                 </div>
-            </div>
+
+            </template>
+
         </div>
+
+
     </div>
     
 

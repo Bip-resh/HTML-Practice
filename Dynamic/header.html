@@ -16,30 +16,35 @@
                 <img src="src/header_pic/logo.svg" alt="logo" class="h-full  w-10">
             </div>
             
-            <div class="flex gap-3 items-center ">
-                <a>Home</a>
-                <a>products</a>
-                <a>collections</a>
-                <a>About</a>
-                <a>Contacts</a>
-            </div>
+            <nav class="flex gap-3 items-center ">
+                <button>Home</button>
+                <button data-page="product">products</button>
+                <button>collections</button>
+                <button>About</button>
+                <button>Contacts</button>
+            </nav>
         </div>
 
         <div class="flex items-center gap-3 ">
-            <img src="src/header_pic/cart.svg" alt="cart" class="h-6 w-6">
-
 
             <div class="inline-grid">
             
-                <button class="notiBtn col-start-1 row-start-1 cursor-pointer hover:scale-105 active:scale-95">
-                    <img src="src/header_pic/account.svg" alt="account" class="h-6 w-6 rounded-full">
+                <button data-page="cart" class="notiBtn col-start-1 row-start-1 cursor-pointer hover:scale-105 active:scale-95">
+                    <img src="src/header_pic/cart.svg" alt="account" class="h-6 w-6 rounded-full">
                 </button>
             
                 <p class="notification hidden col-start-1 row-start-1 justify-self-center
-                        -translate-y-2 pointer-events-none h-4 w-4 items-center justify-center
-                        rounded-full bg-blue-500 text-sm text-black">0</p>
+                                    -translate-y-2 pointer-events-none h-4 w-4 items-center justify-center
+                                    rounded-full bg-blue-500 text-sm text-black">0</p>
             
             </div>
+
+
+
+            <img src="src/header_pic/account.svg" alt="cart" class="h-6 w-6">
+
+
+        
         </div>
     </header>
 
