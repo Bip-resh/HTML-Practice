@@ -4,6 +4,7 @@ import { productList } from "./productList.js";
 
 export let addBtnClicked = 0;
 
+
 export default function initProducts() {
     
     const container = document.querySelector('.product-container');
@@ -19,6 +20,7 @@ export default function initProducts() {
 
 
         
+        
         const increaseButton = newCard.querySelector('.btn-increase');
         const decreaseButton = newCard.querySelector('.btn-decrease');
         const addCart = newCard.querySelector('.addCartBtn');
@@ -29,13 +31,21 @@ export default function initProducts() {
         let productNumber = Number(quantity.textContent);
         
 
-        newCard.querySelector('.product-image').src = element.image;
+        const imageSrc = element.image;
+        newCard.querySelector('.product-image').src = imageSrc;
+        
+
         newCard.querySelector('.product-image').alt = element.name;
 
 
-        newCard.querySelector('.product-name').textContent = element.name.charAt(0).toUpperCase() + element.name.slice(1);
-        newCard.querySelector('.product-price').textContent = `Price : ${element.price}`;
-        console.log(newCard.querySelector('.product-details').textContent = element.details);
+        const title = element.name.charAt(0).toUpperCase() + element.name.slice(1);
+        newCard.querySelector('.product-name').textContent = title;
+
+        const price = element.price;
+        newCard.querySelector('.product-price').textContent = `Price : ${price}`;
+
+
+        newCard.querySelector('.product-details').textContent = element.details;
 
 
 
@@ -62,6 +72,7 @@ export default function initProducts() {
         
         if (productNumber > 0) {
 
+                let sendProductNum = productNumber;
                 addBtnClicked += productNumber;
                 quantity.textContent = 0;
                 productNumber = 0;
@@ -78,6 +89,20 @@ export default function initProducts() {
                 
 
                 document.dispatchEvent(new CustomEvent('add:cart'));
+                
+                
+            
+                document.dispatchEvent(new CustomEvent('addCartDetails', {
+                    detail : {
+                        title,
+                        price,
+                        imageSrc,
+                        sendProductNum
+                    }
+                }))
+            
+            
+            
                 
             }
             
